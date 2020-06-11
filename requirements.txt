@@ -1,6 +1,6 @@
 certifi==2020.4.5.1
 chardet==3.0.4
-Django==2.1
+Django==2.2.13
 django-haystack==2.8.1
 django-js-asset==1.2.2
 django-mdeditor==0.1.18
