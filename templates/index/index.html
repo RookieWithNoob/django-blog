@@ -1,0 +1,69 @@
+<!-- extends表明此页面继承自 base.html 文件 -->
+{% extends "index/base_index.html" %}
+{% load staticfiles %}
+<!-- 写入 base.html 中定义的 title -->
+{% block title %}
+    吕奉先
+{% endblock title %}
+{% block content %}
+    <div class="layui-col-xs12 layui-col-sm4 layui-col-md4  wow fadeInUp" style="padding: 0 10px">
+        <div class="single-news">
+            <div class="news-head">
+                <img src="{{  hot_articles.0.news.image_url }}">
+            </div>
+            <div class="news-content">
+                <h3>
+                    <a href="#">
+                        {{ hot_articles.0.news.title }}
+                    </a>
+                </h3>
+                <div class="date">
+                    {{ hot_articles.0.news.create_time }}
+                </div>
+                <a href="#" class="layui-btn layui-btn-normal">
+                    阅读更多
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="layui-col-xs12 layui-col-sm4 layui-col-md4  wow fadeInUp" data-wow-delay=".2s" style="padding: 0 10px">
+        <div class="single-news">
+            <div class="news-head">
+                <img src="{{  hot_articles.1.news.image_url }}">
+            </div>
+            <div class="news-content">
+                <h3>
+                    <a href="#">
+                        {{ hot_articles.1.news.title }}
+                    </a>
+                </h3>
+                <div class="date">
+                    {{ hot_articles.1.news.create_time }}
+                </div>
+                <a href="#" class="layui-btn layui-btn-normal">
+                    阅读更多
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="layui-col-xs12 layui-col-sm4 layui-col-md4  wow fadeInUp" data-wow-delay=".4s" style="padding: 0 10px">
+        <div class="single-news">
+            <div class="news-head">
+                <img src="{{  hot_articles.2.news.image_url }}">
+            </div>
+            <div class="news-content">
+                <h3>
+                    <a href="#">
+                        {{ hot_articles.2.news.title }}
+                    </a>
+                </h3>
+                <div class="date">
+                    {{ hot_articles.2.news.create_time }}
+                </div>
+                <a href="#" class="layui-btn layui-btn-normal">
+                    阅读更多
+                </a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

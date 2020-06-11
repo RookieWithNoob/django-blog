@@ -1,0 +1,118 @@
+{% extends 'base/base.html' %}
+{% load staticfiles %}
+{% block title %}吕奉先:)文章详情{% endblock %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}"/>
+{#    <link rel="stylesheet" href="{% static 'css/message.css' %}"/>#}
+    <!-- 引入monikai.css -->
+    <link rel="stylesheet" href="{% static 'css/monokai.css' %}">
+    {#    <link rel="stylesheet" href="{% static 'css/aplayer.css' %}"/>#}
+{% endblock %}
+
+<!-- 预留具体页面的位置 -->
+{% block main %}
+    <div class="container-fixed">
+        <div class="col-content" style="width:100%">
+            <div class="inner">
+                <div class="article-list">
+                    <input type="hidden" value="@Model.BlogTypeID" id="blogtypeid"/>
+                    <div class="article-item">
+                        <aside class="title" style="line-height:1.5;">
+                            <h4>{{ article.title }}</h4>
+                            <p class="fc-grey fs-14">
+                                <small>
+                                    作者：<a href="https://wpa.qq.com/msgrd?v=3&uin=1105067343&site=qq&menu=yes"
+                                          target="_blank" class="fc-link">吕奉先</a>
+                                </small>
+                                <small class="ml10">围观群众：<i class="readcount">{{ article.views }}</i></small>
+                                <small class="ml10">更新于 <label>{{ article.update_time }}</label></small>
+                            </p>
+                        </aside>
+                        <div class="time mt10" style="padding-bottom:0;">
+                            <span class="day">{{ article.create_time | date:'j' }}</span>
+                            <span class="month fs-18">{{ article.create_time | date:'n' }}
+                                <small class="fs-14">月</small></span>
+                            <span class="year fs-18">{{ article.create_time | date:'Y' }}</span>
+                        </div>
+
+                        <div class="content"
+                             style="border-bottom: 1px solid #e1e2e0; padding-bottom: 20px;">
+                            <h6 style="border-left:3px solid #1e9fff">文章正文</h6>
+                            {{ article.content |safe }}
+
+                            <div class="copyright mt20">
+                                <p class="f-toe fc-black">
+                                    如无特殊说明，文章均为本站原创，转载请注明出处
+                                </p>
+                                <p class="f-toe">
+                                    本文标题：
+                                    <a href="javascript:void(0)" class="r-title">{{ article.title }}</a>
+                                </p>
+                                <p class="f-toe">
+                                    本文网址：
+                                    <a href="javascript:void(0)">{{ request.build_absolute_uri }}</a>
+                                </p>
+                            </div>
+                            <div id="aplayer" style="margin:5px 0"></div>
+                            <h6>延伸阅读</h6>
+                            <ol class="b-relation"></ol>
+                        </div>
+                        <div class="bdsharebuttonbox share" data-tag="share_1">
+                            <ul>
+                                <li class="f-praise"><span><a class="s-praise"></a></span></li>
+                                <li class="f-weinxi"><a class="s-weinxi" data-cmd="weixin"></a></li>
+                                <li class="f-sina"><a class="s-sina" data-cmd="tsina"></a></li>
+                                <li class="f-qq" href="#"><i class="fa fa-qq"></i></li>
+                                <li class="f-qzone"><a class="s-qzone" data-cmd="qzone"></a></li>
+                            </ul>
+                        </div>
+                        <div class="f-cb"></div>
+                        <div class="mt20 f-fwn fs-24 fc-grey comment">
+                        </div>
+                        <fieldset class="layui-elem-field layui-field-title">
+                            <div class="content">
+                                <h6 style="border-left:3px solid #f44336">评论</h6>
+                                <div class="textarea-wrap message" id="textarea-wrap">
+                                    {% if user.is_authenticated %}
+                                        <form class="layui-form blog-editor" action="" method="post">
+                                            {% csrf_token %}
+                                            <div>
+                                                    <textarea name="content" lay-verify="content" id="remarkEditor"
+                                                              placeholder="请输入内容"
+                                                              class="layui-textarea layui-hide"></textarea>
+                                                {#                            {{ message_form.media }}#}
+                                                {#                            {{ message_form.content }}#}
+                                            </div>
+                                            <div class="layui-form-item" style="margin-top: 10px;
+    margin-bottom: 0px;">
+                                                <button class="layui-btn" lay-submit="formLeaveMessage"
+                                                        lay-filter="formLeaveMessage">提交留言
+                                                </button>
+                                            </div>
+                                        </form>
+                                    {% else %}
+                                        <h1 style="text-align:center;margin: 10px">请<a style="color: #9c27b0"
+                                                                                       href="{% url 'user:login' %}?next=
+{% url 'article:article_detail' article.id%}">登录</a>后留言
+                                        </h1>
+                                    {% endif %}
+                                </div>
+
+                            </div>
+                        </fieldset>
+                        <ul class="blog-comment" id="blog-comment"></ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+{% endblock main %}
+{% block script %}
+    <script src="{% static 'js/yss/article.js' %}"></script>
+{% endblock %}
+
+
+<!-- container end -->
+
+

@@ -1,0 +1,32 @@
+{% load staticfiles %}
+<div class="header">
+</div>
+<header class="gird-header">
+    <div class="header-fixed">
+        <div class="header-inner">
+            <a href="{% url 'article:index' %}" class="header-logo" id="logo">Welcome</a>
+            <!-- 定义菜单里面的表单 -->
+            <nav class="nav" id="nav">
+
+                <ul>
+                    <li><a href="http://www.baidu.com">首页</a></li>
+                    <li><a href="{% url 'article:article_list' %}">博客</a></li>
+                    <li><a href="{% url 'article:archives' %}">归档</a></li>
+                    <li><a href="{% url 'user:message' %}">留言</a></li>
+                    <li><a href="{% url 'article:link' %}">友链</a></li>
+                    <li><a href="{% url 'article:about' %}">关于</a></li>
+                    {% if user.is_authenticated %}
+                        <div class="blog-user">
+                            <a href="{% url 'user:logout' %}"><img
+                                    src="{{ user.user_image_url }}"
+                                    alt="" title=""></a>
+                        </div>
+                    {% else %}
+                        <li><a href="{% url 'user:login' %}">登录</a></li>
+                        <li><a href="{% url 'user:register' %}">注册</a></li>
+                    {% endif %}
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>

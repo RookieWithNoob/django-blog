@@ -1,0 +1,172 @@
+{% extends 'base/base.html' %}
+{% load staticfiles %}
+{% block title %}吕奉先:)留言板{% endblock %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'css/message.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/about.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/monokai.css' %}">
+{% endblock %}
+
+<!-- 预留具体页面的位置 -->
+{% block main %}
+    <div class="about-banner" id="container">
+        <header class="l-top hasAnim arrow-holder">
+            <a data-path-hover="M31.3184948,33.1943359 C36.3357454,28.0664371 44.4728686,28.0690462 49.572124,33.2807584 C54.6360745,38.4563871 54.6061839,46.8782889 49.6566817,51.9369454 L31.318494,69.5197703 L49.6566817,89.71735 C54.6739322,94.8452488 54.6713794,103.161825 49.572124,108.373537 C44.5081735,113.549166 36.267997,113.518616 31.3184948,108.459959 L3.8112137,78.891075 C-1.25273677,73.7154463 -1.2880417,65.3601778 3.8112137,60.1484655 L31.3184948,33.1943359 Z">
+                <svg width="0" height="0">
+                    <path fill="#fff"
+                          d="M58.9103319,3.8342148C63.9275825,-1.29368407,72.0647057,-1.29107495,77.1639611,3.92063726C82.2279116,9.09626594,82.198021,17.5181678,77.2485188,22.5768242C77.2485188,22.5768242,31.318494,69.5197703,31.318494,69.5197703C31.318494,69.5197703,77.2485188,116.462716,77.2485188,116.462716C82.2657693,121.590615,82.2632165,129.907191,77.1639611,135.118903C72.1000106,140.294532,63.8598341,140.263982,58.9103319,135.205326C58.9103319,135.205326,3.8112137,78.891075,3.8112137,78.891075C-1.25273677,73.7154463,-1.2880417,65.3601778,3.8112137,60.1484655C3.8112137,60.1484655,58.9103319,3.8342148,58.9103319,3.8342148C58.9103319,3.8342148,58.9103319,3.8342148,58.9103319,3.8342148"></path>
+                </svg>
+            </a>
+            <a data-path-hover="M31.3184948,33.1943359 C36.3357454,28.0664371 44.4728686,28.0690462 49.572124,33.2807584 C54.6360745,38.4563871 54.6061839,46.8782889 49.6566817,51.9369454 L31.318494,69.5197703 L49.6566817,89.71735 C54.6739322,94.8452488 54.6713794,103.161825 49.572124,108.373537 C44.5081735,113.549166 36.267997,113.518616 31.3184948,108.459959 L3.8112137,78.891075 C-1.25273677,73.7154463 -1.2880417,65.3601778 3.8112137,60.1484655 L31.3184948,33.1943359 Z">
+                <svg width="0" height="0">
+                    <path fill="#fff"
+                          d="M58.9103319,3.8342148 C63.9275825,-1.29368407 72.0647057,-1.29107495 77.1639611,3.92063726 C82.2279116,9.09626594 82.198021,17.5181678 77.2485188,22.5768242 L31.318494,69.5197703 L77.2485188,116.462716 C82.2657693,121.590615 82.2632165,129.907191 77.1639611,135.118903 C72.1000106,140.294532 63.8598341,140.263982 58.9103319,135.205326 L3.8112137,78.891075 C-1.25273677,73.7154463 -1.2880417,65.3601778 3.8112137,60.1484655 L58.9103319,3.8342148 Z"></path>
+                </svg>
+            </a>
+        </header>
+        <div class="about-title">
+            <h1>留言板</h1>
+            <p>沟通交流&nbsp;&nbsp;&nbsp;&nbsp;拉近你我</p>
+        </div>
+    </div>
+    <div class="container-fixed">
+        <div class="container-inner">
+            <div class="textarea-wrap message" id="textarea-wrap">
+                {% if user.is_authenticated %}
+                    <form class="layui-form blog-editor" action="" method="post">
+                        {% csrf_token %}
+                        <div>
+                                                    <textarea name="content" lay-verify="content" id="remarkEditor"
+                                                              placeholder="请输入内容"
+                                                              class="layui-textarea layui-hide"></textarea>
+                            {#                            {{ message_form.media }}#}
+                            {#                            {{ message_form.content }}#}
+                        </div>
+                        <div class="layui-form-item" style="margin-top: 10px;
+    margin-bottom: 0px;">
+                            <button class="layui-btn" lay-submit="formLeaveMessage" lay-filter="formLeaveMessage">提交留言
+                            </button>
+                        </div>
+                    </form>
+                {% else %}
+                    <h1 style="text-align:center;margin: 10px">请<a style="color: #9c27b0"
+                                                                   href="{% url 'user:login' %}?next=
+{% url 'user:message' %}">登录</a>后留言
+                    </h1>
+                {% endif %}
+            </div>
+        </div>
+        <div class="f-cb"></div>
+        <div class="mt20">
+            {#            <h4 style="text-align: center;background-color: #fff;padding: 5px;">共有{{ messages_list.count }}条留言</h4>#}
+            <ul class="message-list" id="message-list">
+                {% for message in messages %}
+                    <li class="zoomIn article">
+                        <div class="comment-parent">
+                            <a name="remark-1"></a>
+                            <img src="{{ message.author.user_image_url }}"/>
+                            <div class="info">
+                                <span class="username">{{ message.author.username }}</span>
+                                {% if message.author.is_superuser %}
+                                    <span style="display: inline-block;padding: 0 5px;margin-right: 10px;color: #fff;background: #9c27b0;border-radius: 3px;font-size: 12px;">站长</span>
+                                {% endif %}
+                                <span style="color: #a93838">{{ request.META.HTTP_USER_AGENT }}</span>
+                            </div>
+                            <div class="comment-content">
+                                {{ message.content }}
+                            </div>
+                            <p class="info info-footer">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                {#                                <p>{{ request.META.HTTP_X_FORWARDED_FOR }}</p>#}
+                                {#                            {{ request.META.REMOTE_ADDR }}#}
+                                {#                                {{ request.META }}     获取请求信息     #}
+                                <span>{{ message.addr }}</span>
+                                <span class="comment-time">{{ message.create_time|date:"Y-m-d H:i:s" }}</span>
+                                {% if user.is_authenticated %}
+                                    <a href="javascript:;" class="btn-reply" data-targetid="1"
+                                       data-targetname="燕十三">回复</a>
+                                {% else %}
+                                {% endif %}
+                            </p>
+                        </div>
+                        <hr/>
+                        <div class="comment-child">
+                            <a name="reply-1"></a>
+                            <img src="https://thirdqq.qlogo.cn/qqapp/101465933/7627F745B95BFAC18C6C481FE72B4EB1/100">
+                            <div class="info">
+                                <span class="username">燕十四</span>
+                                {#                                {% if message.author.is_superuser %}#}
+                                {#                                    <span style="display: inline-block;padding: 0 5px;margin-right: 10px;color: #fff;background: #9c27b0;border-radius: 3px;font-size: 12px;">站长</span>#}
+                                {#                                {% endif %}#}
+                                <span style="padding-right:0;margin-left:-5px;">回复</span>
+                                <span class="username">燕十三</span>
+                                {#                                {% if message.author.is_superuser %}#}
+                                {#                                    <span style="display: inline-block;padding: 0 5px;margin-right: 10px;color: #fff;background: #9c27b0;border-radius: 3px;font-size: 12px;">站长</span>#}
+                                {#                                {% endif %}#}
+                                <span>一剑光寒十九洲</span>
+                            </div>
+                            <p class="info">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <span>四川</span>
+                                <span class="comment-time">2018-01-01</span>
+                                {% if user.is_authenticated %}
+                                    <a href="javascript:;" class="btn-reply" data-targetid="2"
+                                       data-targetname="燕十四">回复</a>
+                                    {#                                {% else %}#}
+                                {% endif %}
+                            </p>
+                        </div>
+                        <div class="replycontainer layui-hide">
+                            <form class="layui-form" action="" method="post">
+                                {% csrf_token %}
+                                <input type="hidden" name="remarkId" value="1">
+                                <input type="hidden" name="targetUserId" value="0">
+                                <div class="layui-form-item">
+                                <textarea name="replyContent" lay-verify="replyContent" placeholder="请输入回复内容"
+                                          class="layui-textarea" style="min-height:80px;"></textarea>
+                                </div>
+                                <div class="layui-form-item">
+                                    <button class="layui-btn layui-btn-xs" lay-submit="formReply"
+                                            lay-filter="formReply">
+                                        提交
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+            {# 实现分页标签的代码 #}
+            {# 这里使用 bootstrap 渲染页面 #}
+            <div id="pages" class="text-center">
+                <nav>
+                    <ul class="pagination">
+                        <li>
+                            {% if messages.has_previous %}
+                                <a class='active' href="?page={{ messages.previous_page_number }}">上一页</a>
+                            {% endif %}
+
+                            <span>
+                    Page {{ messages.number }} of {{ messages.paginator.num_pages }}</span>
+
+                            {% if messages.has_next %}
+                                <a class='active' href="?page={{ messages.next_page_number }}">下一页</a>
+                            {% endif %}
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+{% endblock main %}
+{% block script %}
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="{% static 'js/plugins/blogbenoitboucart.min.js' %}"></script>
+    <script src="{% static 'js/pagemessage.js' %}"></script>
+{% endblock %}
+
+
+<!-- container end -->
+
+
