@@ -60,7 +60,7 @@ INSTALLED_APPS = [
     # # 可添加需要的第三方登录
     # 'allauth.socialaccount.providers.github',
 
-    # 'haystack', # 注册全文检索框架 将haystack放在最后
+    'haystack', # 注册全文检索框架 将haystack放在最后
 
 ]
 
@@ -338,3 +338,20 @@ MDEDITOR_CONFIGS = {
 #
 # # 登录成功后重定向地址
 # LOGIN_REDIRECT_URL = '/article'
+
+# 全文搜索引擎haystack 配置
+# 不同的搜索引擎，配置不同，详情见官方文档
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        'ENGINE': 'haystack.backends.elasticsearch_backend.ElasticsearchSearchEngine',
+        'URL': 'http://127.0.0.1:9200/',    # 此处为elasticsearch运行的服务器ip地址和端口
+        'INDEX_NAME': 'wjpython',           # 指定elasticserach建立的索引库名称
+    },
+}
+
+# 搜索结果每页显示数量
+HAYSTACK_SEARCH_RESULTS_PER_PAGE = 4
+# 实时更新index
+HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
+# 防止标题被截断
+HAYSTACK_CUSTOM_HIGHLIGHTER = 'article.utils.Highlighter'

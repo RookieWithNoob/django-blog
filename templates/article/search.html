@@ -1,0 +1,266 @@
+{% extends 'base/base.html' %}
+{% load staticfiles %}
+{% block title %}吕奉先:)搜索{% endblock %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"/>
+    <style>
+        /* 搜索关键词高亮 */
+        span.highlighted {
+          color: red;
+        }
+    </style>
+{% endblock %}
+
+<!-- 预留具体页面的位置 -->
+{% block main %}
+    <div class="container-fixed">
+        <div class="col-content">
+            <div class="inner">
+                <article class="article-list bloglist" id="LAY_bloglist">
+                    {% if query %}
+                        {% load highlight %}
+                        {% for article in page.object_list %}
+                            <section class="article-item zoomIn article">
+                                {#                        语法在获取moidel中字段带有choices的字段属性时；{{course.get_属性名_display}}#}
+                                <div class="fc-flag">{{ article.object.get_attributes_display }}</div>
+                                <h5 class="title">
+                                    <span class="fc-blue">【{{ article.object.tag.name }}】</span>
+                                    <a href="{% url 'article:article_detail' article.id %}">{% highlight article.title with query %}</a>
+                                </h5>
+                                <div class="time">
+                                    <span class="day">{{ article.object.create_time | date:'j' }}</span>
+                                    <span class="month fs-18">{{ article.object.create_time | date:'n' }}<span
+                                            class="fs-14">月</span></span>
+                                    <span class="year fs-18 ml10">{{ article.object.create_time | date:'Y' }}</span>
+                                </div>
+                                <div class="content">
+                                    <a href="{% url 'article:article_detail' article.id %}" class="cover img-light">
+                                        <img src="{{ article.image_url }}">
+                                    </a>
+                                    {#                                其中的|slice:'100'是Django的过滤器语法，表示取出正文的前100个字符，避免摘要太长。#}
+                                    {% highlight article.summary with query %}
+{#                                    {{ article.summary |slice:'100' }}#}
+                                </div>
+                                <div class="read-more">
+                                    <a href="{% url 'article:article_detail' article.id %}" class="fc-black f-fwb"
+                                       style="right: 20px;position: absolute;
+                                ">阅读全文</a>
+                                </div>
+                                <aside class="f-oh footer">
+                                    <div class="f-fl tags">
+                                        <span class="fa fa-tags fs-16"></span>
+                                        <a href="{% url 'article:tag' article.object.tag.id %}"
+                                           class="tag">{{ article.object.tag.name }}</a>
+                                    </div>
+                                    <div class="f-fr">
+									<span class="read">
+										<i class="fa fa-eye fs-16" style="color: #2196f3"></i>
+										<i class="num">{{ article.object.views }}</i>
+									</span>
+                                        <span class="ml20">
+										<i class="fa fa-comments fs-16" style="color: #ff5722"></i>
+										<a href="javascript:void(0)"
+                                           class="num fc-grey">{{ article.object.comments_set.count }}</a>
+									</span>
+                                    </div>
+                                </aside>
+                            </section>
+                        {% empty %}
+                            <section class="article-item zoomIn article">
+                            <p style="font-size: 30px;
+    text-align: center;">没有找到你想要的找的内容.</p>
+                            </section>
+                        {% endfor %}
+                    {% else %}
+                        {% for article in page %}
+                            <section class="article-item zoomIn article">
+                                {#                        语法在获取moidel中字段带有choices的字段属性时；{{course.get_属性名_display}}#}
+                                <div class="fc-flag">{{ article.get_attributes_display }}</div>
+                                <h5 class="title">
+                                    <span class="fc-blue">【{{ article.tag.name }}】</span>
+                                    <a href="{% url 'article:article_detail' article.id %}">{{ article.title }}</a>
+                                </h5>
+                                <div class="time">
+                                    <span class="day">{{ article.create_time | date:'j' }}</span>
+                                    <span class="month fs-18">{{ article.create_time | date:'n' }}<span
+                                            class="fs-14">月</span></span>
+                                    <span class="year fs-18 ml10">{{ article.create_time | date:'Y' }}</span>
+                                </div>
+                                <div class="content">
+                                    <a href="{% url 'article:article_detail' article.id %}" class="cover img-light">
+                                        <img src="{{ article.image_url }}">
+                                    </a>
+                                    {#                                其中的|slice:'100'是Django的过滤器语法，表示取出正文的前100个字符，避免摘要太长。#}
+                                    {{ article.summary |slice:'100' }}
+                                </div>
+                                <div class="read-more">
+                                    <a href="{% url 'article:article_detail' article.id %}" class="fc-black f-fwb"
+                                       style="right: 20px;position: absolute;
+                                ">阅读全文</a>
+                                </div>
+                                <aside class="f-oh footer">
+                                    <div class="f-fl tags">
+                                        <span class="fa fa-tags fs-16"></span>
+                                        <a href="{% url 'article:tag' article.tag.id %}"
+                                           class="tag">{{ article.tag.name }}</a>
+                                    </div>
+                                    <div class="f-fr">
+									<span class="read">
+										<i class="fa fa-eye fs-16" style="color: #2196f3"></i>
+										<i class="num">{{ article.views }}</i>
+									</span>
+                                        <span class="ml20">
+										<i class="fa fa-comments fs-16" style="color: #ff5722"></i>
+										<a href="javascript:void(0)"
+                                           class="num fc-grey">{{ article.comments_set.count }}</a>
+									</span>
+                                    </div>
+                                </aside>
+                            </section>
+                        {% endfor %}
+                    {% endif %}
+                    {# 实现分页标签的代码 #}
+                    {# 这里使用 bootstrap 渲染页面 #}
+                    <div id="pages" class="text-center">
+                        <nav>
+                            <ul class="pagination">
+                                <li>
+                                    {% if page.has_previous %}
+                                         {% if query %}
+                                        <a class='active' href="?q={{ query }}&page={{ page.previous_page_number }}">上一页</a>
+                                       {% else %}
+                                             <a class='active' href="?page={{ page.previous_page_number }}">上一页</a>
+                                    {% endif %}
+                                {% endif %}
+
+                                    <span>
+                    Page {{ page.number }} of {{ page.paginator.num_pages }}</span>
+
+                                    {% if page.has_next %}
+                                        {% if query %}
+                                            <a class='active' href="?q={{ query }}&page={{ articles.next_page_number }}">下一页</a>
+                                            {% else %}
+                                        <a class='active' href="?page={{ page.next_page_number }}">下一页</a>
+                                    {% endif %}
+                                {% endif %}
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </article>
+            </div>
+        </div>
+        <div class="col-other">
+            <div class="inner">
+                <div class="other-item" id="categoryandsearch">
+                    <div class="search">
+                        <label class="search-wrap">
+                            <form action="">
+                                <input type="text" name='q' id="searchtxt" value="{{ query|default:'' }}" placeholder="输入关键字搜索"/>
+                                <span class="search-icon">
+					                <input type="image" src="{% static 'image/search.png' %}" style="height: 100%;">
+					            </span>
+                            </form>
+                        </label>
+                        <ul class="search-result"></ul>
+                    </div>
+                    <ul class="category mt20" id="category">
+                        <li data-index="0" class="slider"></li>
+                        <li data-index="1"><a href="{% url 'article:article_list' %}">全部文章</a></li>
+                        <li data-index="2"><a href="{% url 'article:tag' 2 %}">python</a></li>
+                        <li data-index="3"><a href="{% url 'article:tag' 4 %}">django</a></li>
+                        <li data-index="4"><a href="{% url 'article:tag' 5 %}">docker</a></li>
+                        <li data-index="5"><a href="{% url 'article:tag' 6 %}">数据分析</a></li>
+                        <li data-index="6"><a href="{% url 'article:tag' 7 %}">其它</a></li>
+                    </ul>
+                </div>
+                <!--右边悬浮 平板或手机设备显示-->
+                <div class="category-toggle"><i class="layui-icon">&#xe603;</i></div>
+                <div class="article-category">
+                    <div class="article-category-title">网站导航</div>
+                    <a href="{% url 'article:index' %}">首页</a>
+                    <a href="{% url 'article:article_list' %}">博客</a>
+                    <a href="{% url 'user:message' %}">留言</a>
+                    <a href="{% url 'article:link' %}">友链</a>
+                    <a href="{% url 'article:about' %}">关于</a>
+                    <div class="f-cb"></div>
+                </div>
+                <!--遮罩-->
+                <div class="blog-mask animated layui-hide"></div>
+{#                <div class="other-item">#}
+{#                    <h5 class="other-item-title">热门文章</h5>#}
+{#                    <div class="inner">#}
+{#                        <ul class="hot-list-article">#}
+{#                            {% for hot in hot_articles %}#}
+{#                                <li><a href="{% url 'article:article_detail' hot.id %}">{{ hot.title }}</a></li>#}
+{#                            {% endfor %}#}
+{#                        </ul>#}
+{#                    </div>#}
+{#                </div>#}
+                <div class="other-item">
+                    <h5 class="other-item-title">动态信息</h5>
+                    <div class="inner">
+                        <ul class="hot-list-article">
+                            <li><a href="#">.NET Spire.Doc组件</a></li>
+                            <li><a href="#">MUI框架-快速开发APP</a></li>
+                            <li><a href="#">2018最新版QQ音乐api调用</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="other-item">
+                    <h5 class="other-item-title">最近访客</h5>
+                    <div class="inner">
+                        <dl class="vistor">
+                            <dd><a href="javasript:;"><img
+                                    src="https://thirdqq.qlogo.cn/qqapp/101465933/72388EA977643E8F97111222675720B1/100"><cite>Anonymous</cite></a>
+                            </dd>
+                            <dd><a href="javasript:;"><img
+                                    src="https://thirdqq.qlogo.cn/qqapp/101465933/342F777E313DDF5CCD6E3E707BB0770B/100"><cite>Dekstra</cite></a>
+                            </dd>
+                            <dd><a href="javasript:;"><img
+                                    src="https://thirdqq.qlogo.cn/qqapp/101465933/EA5D00A72C0C43ECD8FC481BD274DEEC/100"><cite>惜i</cite></a>
+                            </dd>
+                            <dd><a href="javasript:;"><img
+                                    src="https://thirdqq.qlogo.cn/qqapp/101465933/EF18CEC98150D2442183AA30F05AAD7B/100"><cite>↙Aㄨ计划
+                                ◆莪↘</cite></a></dd>
+                            <dd><a href="javasript:;"><img
+                                    src="https://thirdqq.qlogo.cn/qqapp/101465933/3D8D91AD2BAFD36F5AC494DA51E270E6/100"><cite>.</cite></a>
+                            </dd>
+                            <dd><a href="javasript:;"><img
+                                    src="https://thirdqq.qlogo.cn/qqapp/101465933/B745A110DAB712A0E6C5D0B633E905D3/100"><cite>Lambert.</cite></a>
+                            </dd>
+                            <dd><a href="javasript:;"><img
+                                    src="https://thirdqq.qlogo.cn/qqapp/101465933/E9BA3A2499EC068B7917B9EF45C4D13C/100"><cite>64ღ</cite></a>
+                            </dd>
+                            <dd><a href="javasript:;"><img
+                                    src="https://thirdqq.qlogo.cn/qqapp/101465933/09F92966169272DD7DD9999E709A0204/100"><cite>doBoor</cite></a>
+                            </dd>
+                            <dd><a href="javasript:;"><img
+                                    src="https://thirdqq.qlogo.cn/qqapp/101465933/59991D53192643A1A651383847332EB6/100"><cite>毛毛小妖</cite></a>
+                            </dd>
+                            <dd><a href="javasript:;"><img
+                                    src="https://thirdqq.qlogo.cn/qqapp/101465933/FF34F311DDC43E2AF63BE897BCA24F05/100"><cite>NULL</cite></a>
+                            </dd>
+                            <dd><a href="javasript:;"><img
+                                    src="https://thirdqq.qlogo.cn/qqapp/101465933/59AA25A7627284AE62C8E6EBDC6FE417/100"><cite>吓一跳</cite></a>
+                            </dd>
+                            <dd><a href="javasript:;"><img
+                                    src="https://thirdqq.qlogo.cn/qqapp/101465933/28B021E0F5AF0A4B9B781A24329FE897/100"><cite>如初</cite></a>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock main %}
+{% block script %}
+    <script src="{% static 'js/yss/article.js' %}"></script>
+{% endblock %}
+
+
+<!-- container end -->
+
+

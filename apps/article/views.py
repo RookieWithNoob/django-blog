@@ -5,6 +5,8 @@ import markdown
 from django.views.generic import View
 from django.http import HttpResponse
 from django.core.paginator import Paginator, PageNotAnInteger, InvalidPage  # 分页
+from haystack.generic_views import SearchView  # 搜索
+from django.conf import settings
 # 导入数据模型ArticlePost
 from .models import HotArticles, Article, Tags, FriendLink, Comments
 from .form import CommentForm
@@ -221,3 +223,55 @@ class ArchivesView(View):
     def get(self, request):
         archives = Article.objects.all()
         return render(request, 'archives/archives.html', {'archives': archives})
+
+
+
+
+
+class ArticleSearchView(SearchView):
+    """
+    博客搜索视图
+    """
+    # 设置搜索模板文件
+    template_name = 'article/search.html'
+
+    # 重写get请求，如果请求参数q为空，返回模型News的热门新闻数据
+    # 否则根据参数q搜索相关数据
+    def get(self, request, *args, **kwargs):
+        # 1. 获取查询参数
+        query = request.GET.get('q')
+        # 2. 如果没有查询参数
+        if not query:
+            # 则返回博客列表
+            # 获取热门新闻对象, 包含外键标签, 查询数据并做筛选和排序
+            articles_list = Article.objects.filter(is_delete=False).order_by('-create_time')
+            # 分页, 从配置文件中拿到haystack参数
+            # paginator = Paginator(articles_list, 1)
+            paginator = Paginator(articles_list, settings.HAYSTACK_SEARCH_RESULTS_PER_PAGE)
+            try:
+                # 拿到前端传递的page,
+                page = paginator.get_page(int(request.GET.get('page')))
+            except Exception as e:
+                # 如果出错则返回第一页,保证容错性
+                page = paginator.get_page(1)
+
+
+            return render(request, self.template_name, context={
+                'page': page,
+                # 'paginator': paginator,
+                'query': query,
+            })
+        # 3. 如果有查询参数
+        else:
+            # 则执行搜索
+            return super().get(request, *args, **kwargs)
+
+    def get_context_data(self, *args, **kwargs):
+        """
+        在context中添加page变量
+        """
+        context = super().get_context_data(*args, **kwargs)
+        if context['page_obj']:
+            # 捕获page_obj,将其赋值到page
+            context['page'] = context['page_obj']
+        return context

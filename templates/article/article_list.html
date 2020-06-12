@@ -86,10 +86,13 @@
                 <div class="other-item" id="categoryandsearch">
                     <div class="search">
                         <label class="search-wrap">
-                            <input type="text" id="searchtxt" placeholder="输入关键字搜索"/>
+                            <form action="/article/search/">
+                            <input type="text" name='q' id="searchtxt" placeholder="输入关键字搜索"/>
                             <span class="search-icon">
-					                <i class="fa fa-search"></i>
+{#					                <i class="fa fa-search"></i>#}
+                                    <input type="image" src="{% static 'image/search.png' %}" style="height: 100%;">
 					            </span>
+                            </form>
                         </label>
                         <ul class="search-result"></ul>
                     </div>
@@ -97,10 +100,10 @@
                         <li data-index="0" class="slider"></li>
                         <li data-index="1"><a href="{% url 'article:article_list' %}">全部文章</a></li>
                         <li data-index="2"><a href="{% url 'article:tag' 2 %}">python</a></li>
-                        <li data-index="3"><a href="{% url 'article:tag' 2 %}">django</a></li>
-                        <li data-index="4"><a href="{% url 'article:tag' 2 %}">docker</a></li>
-                        <li data-index="5"><a href="{% url 'article:tag' 2 %}">数据分析</a></li>
-                        <li data-index="6"><a href="{% url 'article:tag' 2 %}">其它</a></li>
+                        <li data-index="3"><a href="{% url 'article:tag' 4 %}">django</a></li>
+                        <li data-index="4"><a href="{% url 'article:tag' 5 %}">docker</a></li>
+                        <li data-index="5"><a href="{% url 'article:tag' 6 %}">数据分析</a></li>
+                        <li data-index="6"><a href="{% url 'article:tag' 7 %}">其它</a></li>
                     </ul>
                 </div>
                 <!--右边悬浮 平板或手机设备显示-->
