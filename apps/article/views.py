@@ -11,6 +11,9 @@ from django.conf import settings
 from .models import HotArticles, Article, Tags, FriendLink, Comments
 from .form import CommentForm
 
+from rest_framework import viewsets
+from .serializers import ArticleModelSerializer
+
 # Create your views here.
 
 logger = logging.getLogger('django')
@@ -275,3 +278,8 @@ class ArticleSearchView(SearchView):
             # 捕获page_obj,将其赋值到page
             context['page'] = context['page_obj']
         return context
+
+
+class ArticleAPIView(viewsets.ModelViewSet):
+    queryset = Article.objects.all()
+    serializer_class = ArticleModelSerializer

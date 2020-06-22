@@ -10,6 +10,7 @@ from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
 from user.models import User, Message
 
+
 logger = logging.getLogger('django')
 
 
@@ -181,3 +182,4 @@ class MessageView(View):
                 return redirect(reverse('user:login'))
         else:
             return HttpResponse("表单内容有误，请重新填写。")
+

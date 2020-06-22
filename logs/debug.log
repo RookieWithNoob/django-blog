@@ -12578,3 +12578,1478 @@ INFO 2020-06-22 18:53:25,545 basehttp 124 "GET /article/ HTTP/1.1" 200 23255
 WARNING 2020-06-22 18:53:25,591 log 228 Not Found: /image/two.jpg
 WARNING 2020-06-22 18:53:25,592 basehttp 124 "GET /image/two.jpg HTTP/1.1" 404 4072
 INFO 2020-06-22 18:53:25,817 basehttp 124 "GET /static/image/favicon.ico HTTP/1.1" 200 1150
+INFO 2020-06-22 19:00:21,480 basehttp 124 "GET /article_detail/7/ HTTP/1.1" 200 9602
+WARNING 2020-06-22 19:00:21,513 log 228 Not Found: /images/dashang.jpg
+WARNING 2020-06-22 19:00:21,513 basehttp 124 "GET /images/dashang.jpg HTTP/1.1" 404 4087
+INFO 2020-06-22 19:00:50,513 basehttp 124 "GET /user/logout/ HTTP/1.1" 302 0
+INFO 2020-06-22 19:00:50,561 basehttp 124 "GET /article/ HTTP/1.1" 200 23089
+WARNING 2020-06-22 19:00:50,628 log 228 Not Found: /image/two.jpg
+WARNING 2020-06-22 19:00:50,634 basehttp 124 "GET /image/two.jpg HTTP/1.1" 404 4072
+INFO 2020-06-22 19:00:53,022 basehttp 124 "GET /article_detail/7/ HTTP/1.1" 200 8485
+WARNING 2020-06-22 19:00:53,047 log 228 Not Found: /images/dashang.jpg
+WARNING 2020-06-22 19:00:53,048 basehttp 124 "GET /images/dashang.jpg HTTP/1.1" 404 4087
+INFO 2020-06-22 19:00:56,769 basehttp 124 "GET /user/login/?next=/article_detail/7/ HTTP/1.1" 200 5083
+INFO 2020-06-22 19:01:05,374 basehttp 124 "GET /article/ HTTP/1.1" 200 23089
+WARNING 2020-06-22 19:01:05,401 log 228 Not Found: /image/two.jpg
+WARNING 2020-06-22 19:01:05,403 basehttp 124 "GET /image/two.jpg HTTP/1.1" 404 4072
+INFO 2020-06-22 19:01:13,318 basehttp 124 "GET / HTTP/1.1" 200 8238
+INFO 2020-06-22 19:01:18,930 basehttp 124 "GET /article/ HTTP/1.1" 200 23089
+WARNING 2020-06-22 19:01:18,951 log 228 Not Found: /image/two.jpg
+WARNING 2020-06-22 19:01:18,954 basehttp 124 "GET /image/two.jpg HTTP/1.1" 404 4072
+INFO 2020-06-22 19:02:16,847 basehttp 124 "GET / HTTP/1.1" 200 8251
+INFO 2020-06-22 19:02:16,995 basehttp 124 "GET /static/image/favicon.ico HTTP/1.1" 200 1150
+INFO 2020-06-22 19:02:20,137 basehttp 124 "GET /user/message/ HTTP/1.1" 200 38046
+INFO 2020-06-22 19:02:30,643 basehttp 124 "GET /admin/ HTTP/1.1" 302 0
+INFO 2020-06-22 19:02:30,695 basehttp 124 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3655
+INFO 2020-06-22 19:02:30,836 basehttp 124 "GET /static/admin/simpleui-x/css/login.css?_=2.1 HTTP/1.1" 200 500
+INFO 2020-06-22 19:02:30,842 basehttp 124 "GET /static/admin/simpleui-x/img/logo.png HTTP/1.1" 200 115997
+INFO 2020-06-22 19:02:30,990 basehttp 124 "GET /static/admin/simpleui-x/particles/app.js HTTP/1.1" 200 3728
+INFO 2020-06-22 19:02:30,993 basehttp 124 "GET /static/admin/simpleui-x/img/bg.svg HTTP/1.1" 200 9547
+INFO 2020-06-22 19:02:30,994 basehttp 124 "GET /static/admin/simpleui-x/particles/particles.js HTTP/1.1" 200 51264
+INFO 2020-06-22 19:02:31,018 basehttp 124 "GET /static/admin/simpleui-x/js/login.js?_=3.3 HTTP/1.1" 200 669
+INFO 2020-06-22 19:02:39,965 basehttp 124 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2020-06-22 19:02:40,065 basehttp 124 "GET /admin/ HTTP/1.1" 200 24142
+INFO 2020-06-22 19:02:40,187 basehttp 124 "GET /static/admin/simpleui-x/waves/waves.min.css?_=2.1 HTTP/1.1" 200 3861
+INFO 2020-06-22 19:02:40,192 basehttp 124 "GET /static/admin/simpleui-x/css/index.css?_=3.2 HTTP/1.1" 200 7134
+INFO 2020-06-22 19:02:40,194 basehttp 124 "GET /static/admin/simpleui-x/automatic/segment.js?_=4.0.2 HTTP/1.1" 200 1448
+INFO 2020-06-22 19:02:40,206 basehttp 124 "GET /static/admin/simpleui-x/automatic/dicts.js?_=4.0.2 HTTP/1.1" 200 5606
+INFO 2020-06-22 19:02:40,295 basehttp 124 "GET /static/admin/simpleui-x/js/index.js?_=4.0.2 HTTP/1.1" 200 19993
+INFO 2020-06-22 19:02:40,299 basehttp 124 "GET /static/admin/simpleui-x/theme/theme.js?_=4.0.2 HTTP/1.1" 200 4274
+INFO 2020-06-22 19:02:40,306 basehttp 124 "GET /static/admin/simpleui-x/js/cookie.js?_=4.0.2 HTTP/1.1" 200 524
+INFO 2020-06-22 19:02:40,310 basehttp 124 "GET /static/admin/simpleui-x/waves/waves.min.js?_=4.0.2 HTTP/1.1" 200 6329
+INFO 2020-06-22 19:02:40,326 basehttp 124 "GET /static/admin/simpleui-x/locale/zh-hans.js?_=4.0.2 HTTP/1.1" 200 1254
+INFO 2020-06-22 19:02:40,337 basehttp 124 "GET /static/admin/simpleui-x/locale/en-us.js?_=4.0.2 HTTP/1.1" 200 811
+INFO 2020-06-22 19:02:45,013 basehttp 124 "GET /admin/article/article/ HTTP/1.1" 200 32333
+INFO 2020-06-22 19:02:45,086 basehttp 124 "GET /static/admin/simpleui-x/locale/zh-hans.js HTTP/1.1" 200 1254
+INFO 2020-06-22 19:02:45,169 basehttp 124 "GET /static/admin/simpleui-x/theme/simpleui.css HTTP/1.1" 200 4421
+INFO 2020-06-22 19:02:45,170 basehttp 124 "GET /static/admin/simpleui-x/css/base.css?_=2.7 HTTP/1.1" 200 3205
+INFO 2020-06-22 19:02:45,173 basehttp 124 "GET /static/admin/simpleui-x/js/language.js?_=2.1.2 HTTP/1.1" 200 189
+INFO 2020-06-22 19:02:45,187 basehttp 124 "GET /static/admin/css/base.css HTTP/1.1" 200 16206
+INFO 2020-06-22 19:02:45,202 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2020-06-22 19:02:45,293 basehttp 124 "GET /static/admin/simpleui-x/js/cookie.js HTTP/1.1" 200 524
+INFO 2020-06-22 19:02:45,301 basehttp 124 "GET /static/admin/css/changelists.css?_=20180905 HTTP/1.1" 200 6305
+INFO 2020-06-22 19:02:45,313 basehttp 124 "GET /static/admin/simpleui-x/locale/en-us.js?_=2.1.2 HTTP/1.1" 200 811
+INFO 2020-06-22 19:02:45,321 basehttp 124 "GET /static/admin/css/responsive.css?_=20180905 HTTP/1.1" 200 17867
+INFO 2020-06-22 19:02:45,323 basehttp 124 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+INFO 2020-06-22 19:02:45,356 basehttp 124 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 360615
+INFO 2020-06-22 19:02:45,367 basehttp 124 "GET /static/admin/js/core.js HTTP/1.1" 200 7127
+INFO 2020-06-22 19:02:45,369 basehttp 124 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1544
+INFO 2020-06-22 19:02:45,378 basehttp 124 "GET /static/admin/js/actions.js HTTP/1.1" 200 6778
+INFO 2020-06-22 19:02:45,394 basehttp 124 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6907
+INFO 2020-06-22 19:02:45,397 basehttp 124 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 131709
+INFO 2020-06-22 19:02:45,432 basehttp 124 "GET /static/admin/simpleui-x/automatic/dicts.js HTTP/1.1" 200 5606
+INFO 2020-06-22 19:02:45,432 basehttp 124 "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO 2020-06-22 19:02:45,438 basehttp 124 "GET /static/admin/simpleui-x/automatic/segment.js HTTP/1.1" 200 1448
+INFO 2020-06-22 19:02:45,444 basehttp 124 "GET /static/admin/js/urlify.js HTTP/1.1" 200 8733
+INFO 2020-06-22 19:02:45,478 basehttp 124 "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 200 85659
+INFO 2020-06-22 19:02:45,653 basehttp 124 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+INFO 2020-06-22 19:02:45,687 basehttp 124 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1149
+INFO 2020-06-22 19:02:45,980 basehttp 124 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+INFO 2020-06-22 19:02:45,990 basehttp 124 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+INFO 2020-06-22 19:02:46,224 basehttp 124 "GET /admin/article/friendlink/ HTTP/1.1" 200 19433
+INFO 2020-06-22 19:02:46,294 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2020-06-22 19:02:49,882 basehttp 124 "GET /admin/article/hotarticles/ HTTP/1.1" 200 19112
+INFO 2020-06-22 19:02:49,947 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2020-06-22 19:02:51,308 basehttp 124 "GET /admin/article/comments/ HTTP/1.1" 200 19409
+INFO 2020-06-22 19:02:51,341 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2020-06-22 19:02:53,927 basehttp 124 "GET /admin/user/message/ HTTP/1.1" 200 33214
+INFO 2020-06-22 19:02:53,980 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2020-06-22 19:02:57,883 basehttp 124 "GET /admin/user/message/17/change/ HTTP/1.1" 200 22369
+INFO 2020-06-22 19:02:57,967 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2020-06-22 19:02:58,034 basehttp 124 "GET /static/admin/css/forms.css HTTP/1.1" 200 8173
+INFO 2020-06-22 19:02:58,034 basehttp 124 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 392
+INFO 2020-06-22 19:02:58,102 basehttp 124 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 343
+INFO 2020-06-22 19:02:58,161 basehttp 124 "GET /static/admin/css/widgets.css HTTP/1.1" 200 10333
+INFO 2020-06-22 19:02:58,169 basehttp 124 "GET /static/admin/js/change_form.js HTTP/1.1" 200 715
+INFO 2020-06-22 19:02:58,178 basehttp 124 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 497
+INFO 2020-06-22 19:03:10,650 basehttp 124 "POST /admin/user/message/17/change/ HTTP/1.1" 302 0
+INFO 2020-06-22 19:03:10,799 basehttp 124 "GET /admin/user/message/ HTTP/1.1" 200 33366
+INFO 2020-06-22 19:03:10,872 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2020-06-22 19:03:30,177 basehttp 124 "GET /admin/article/tags/ HTTP/1.1" 200 22361
+INFO 2020-06-22 19:03:30,211 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2020-06-22 19:03:37,385 basehttp 124 "GET /admin/user/user/ HTTP/1.1" 200 30907
+INFO 2020-06-22 19:03:37,463 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2020-06-22 19:03:37,518 basehttp 124 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2020-06-22 19:03:37,526 basehttp 124 "GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0
+INFO 2020-06-22 19:03:39,465 basehttp 124 "GET /admin/user/message/ HTTP/1.1" 200 33222
+INFO 2020-06-22 19:03:39,514 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2020-06-22 19:03:46,583 basehttp 124 "GET /admin/user/user/3/change/ HTTP/1.1" 200 31437
+INFO 2020-06-22 19:03:46,645 basehttp 124 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+INFO 2020-06-22 19:03:46,649 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2020-06-22 19:03:46,658 basehttp 124 "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+INFO 2020-06-22 19:03:47,012 basehttp 124 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+INFO 2020-06-22 19:03:47,019 basehttp 124 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+INFO 2020-06-22 19:04:09,371 basehttp 124 "GET / HTTP/1.1" 200 8251
+INFO 2020-06-22 19:04:18,652 basehttp 124 "GET /article/ HTTP/1.1" 200 23255
+WARNING 2020-06-22 19:04:18,709 log 228 Not Found: /image/two.jpg
+WARNING 2020-06-22 19:04:18,709 basehttp 124 "GET /image/two.jpg HTTP/1.1" 404 4072
+INFO 2020-06-22 19:04:22,550 basehttp 124 "GET /article_detail/7/ HTTP/1.1" 200 9602
+WARNING 2020-06-22 19:04:22,575 log 228 Not Found: /images/dashang.jpg
+WARNING 2020-06-22 19:04:22,576 basehttp 124 "GET /images/dashang.jpg HTTP/1.1" 404 4087
+INFO 2020-06-22 20:52:42,791 basehttp 124 "GET / HTTP/1.1" 200 8251
+INFO 2020-06-22 20:53:27,797 basehttp 124 "GET /admin/ HTTP/1.1" 302 0
+INFO 2020-06-22 20:53:27,839 basehttp 124 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3655
+WARNING 2020-06-22 20:53:30,921 log 228 Not Found: /favicon.ico
+WARNING 2020-06-22 20:53:30,946 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 4066
+INFO 2020-06-22 20:53:36,434 basehttp 124 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2020-06-22 20:53:36,582 basehttp 124 "GET /admin/ HTTP/1.1" 200 24164
+INFO 2020-06-22 20:53:41,992 basehttp 124 "GET /admin/user/user/ HTTP/1.1" 200 30907
+INFO 2020-06-22 20:53:42,220 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2020-06-22 20:53:45,482 basehttp 124 "GET /admin/user/user/2/change/ HTTP/1.1" 200 31480
+INFO 2020-06-22 20:53:45,648 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7684
+WARNING 2020-06-22 20:59:02,771 log 228 Not Found: /users/1
+WARNING 2020-06-22 20:59:02,772 basehttp 124 "GET /users/1 HTTP/1.1" 404 4054
+WARNING 2020-06-22 20:59:05,089 log 228 Not Found: /users/
+WARNING 2020-06-22 20:59:05,091 basehttp 124 "GET /users/ HTTP/1.1" 404 4051
+WARNING 2020-06-22 21:00:12,814 log 228 Not Found: /api-auth/
+WARNING 2020-06-22 21:00:12,820 basehttp 124 "GET /api-auth/ HTTP/1.1" 404 4060
+WARNING 2020-06-22 21:00:44,431 log 228 Not Found: /user/api-auth/
+WARNING 2020-06-22 21:00:44,434 basehttp 124 "GET /user/api-auth/ HTTP/1.1" 404 5132
+WARNING 2020-06-22 21:00:48,941 log 228 Not Found: /user/users
+WARNING 2020-06-22 21:00:48,942 basehttp 124 "GET /user/users HTTP/1.1" 404 4819
+WARNING 2020-06-22 21:01:03,079 log 228 Not Found: /user/api-auth
+WARNING 2020-06-22 21:01:03,081 basehttp 124 "GET /user/api-auth HTTP/1.1" 404 4828
+WARNING 2020-06-22 21:01:19,278 log 228 Not Found: /user/api-auth/
+WARNING 2020-06-22 21:01:19,279 basehttp 124 "GET /user/api-auth/ HTTP/1.1" 404 5132
+WARNING 2020-06-22 21:04:56,797 log 228 Not Found: /users/
+WARNING 2020-06-22 21:04:56,798 basehttp 124 "GET /users/ HTTP/1.1" 404 4051
+WARNING 2020-06-22 21:04:57,733 log 228 Not Found: /users/
+WARNING 2020-06-22 21:04:57,734 basehttp 124 "GET /users/ HTTP/1.1" 404 4051
+WARNING 2020-06-22 21:04:58,216 log 228 Not Found: /users/
+WARNING 2020-06-22 21:04:58,217 basehttp 124 "GET /users/ HTTP/1.1" 404 4051
+WARNING 2020-06-22 21:04:58,963 log 228 Not Found: /users/
+WARNING 2020-06-22 21:04:58,965 basehttp 124 "GET /users/ HTTP/1.1" 404 4051
+INFO 2020-06-22 21:05:05,392 basehttp 124 "GET /user/users HTTP/1.1" 301 0
+ERROR 2020-06-22 21:05:05,558 log 228 Internal Server Error: /user/users/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 393, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 331, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/urls/base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/urls/resolvers.py", line 622, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'user-detail' not found. 'user-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 760, in data
+    ret = super().data
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 408, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "user-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+ERROR 2020-06-22 21:05:05,561 basehttp 124 "GET /user/users/ HTTP/1.1" 500 166437
+ERROR 2020-06-22 21:05:50,063 log 228 Internal Server Error: /user/users/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 393, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 331, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/urls/base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/urls/resolvers.py", line 622, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'user-detail' not found. 'user-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 760, in data
+    ret = super().data
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 408, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "user-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+ERROR 2020-06-22 21:05:50,067 basehttp 124 "GET /user/users/ HTTP/1.1" 500 175458
+ERROR 2020-06-22 21:07:11,474 log 228 Internal Server Error: /user/users/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 393, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 331, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/urls/base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/urls/resolvers.py", line 622, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'user-detail' not found. 'user-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 760, in data
+    ret = super().data
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 408, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "user-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+ERROR 2020-06-22 21:07:11,477 basehttp 124 "GET /user/users/ HTTP/1.1" 500 175458
+ERROR 2020-06-22 21:07:23,006 log 228 Internal Server Error: /user/users/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 393, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 331, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/urls/base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/urls/resolvers.py", line 622, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'user-detail' not found. 'user-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 760, in data
+    ret = super().data
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 408, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "user-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+ERROR 2020-06-22 21:07:23,022 basehttp 124 "GET /user/users/ HTTP/1.1" 500 175458
+ERROR 2020-06-22 21:07:24,265 log 228 Internal Server Error: /user/users/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 393, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 331, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/urls/base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/urls/resolvers.py", line 622, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'user-detail' not found. 'user-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 760, in data
+    ret = super().data
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 408, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "user-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+ERROR 2020-06-22 21:07:24,272 basehttp 124 "GET /user/users/ HTTP/1.1" 500 175458
+ERROR 2020-06-22 21:07:25,085 log 228 Internal Server Error: /user/users/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 393, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 331, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/urls/base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/urls/resolvers.py", line 622, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'user-detail' not found. 'user-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 760, in data
+    ret = super().data
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 408, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "user-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+ERROR 2020-06-22 21:07:25,086 basehttp 124 "GET /user/users/ HTTP/1.1" 500 175458
+ERROR 2020-06-22 21:07:29,764 log 228 Internal Server Error: /user/users/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 393, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 331, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/urls/base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/urls/resolvers.py", line 622, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'user-detail' not found. 'user-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 760, in data
+    ret = super().data
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 408, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "user-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+ERROR 2020-06-22 21:07:29,768 basehttp 124 "GET /user/users/ HTTP/1.1" 500 175458
+WARNING 2020-06-22 21:07:59,537 log 228 Not Found: /uses/
+WARNING 2020-06-22 21:07:59,538 basehttp 124 "GET /uses/ HTTP/1.1" 404 4048
+WARNING 2020-06-22 21:08:04,633 log 228 Not Found: /users
+WARNING 2020-06-22 21:08:04,634 basehttp 124 "GET /users HTTP/1.1" 404 4048
+INFO 2020-06-22 21:08:09,210 basehttp 124 "GET /user/ HTTP/1.1" 200 9862
+INFO 2020-06-22 21:08:09,255 basehttp 124 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2020-06-22 21:08:09,259 basehttp 124 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+INFO 2020-06-22 21:08:09,265 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2020-06-22 21:08:09,270 basehttp 124 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2020-06-22 21:08:09,273 basehttp 124 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2020-06-22 21:08:09,276 basehttp 124 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2020-06-22 21:08:09,284 basehttp 124 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2020-06-22 21:08:09,286 basehttp 124 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2020-06-22 21:08:09,291 basehttp 124 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+INFO 2020-06-22 21:08:09,294 basehttp 124 "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 200 88145
+INFO 2020-06-22 21:08:09,308 basehttp 124 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+WARNING 2020-06-22 21:08:24,528 log 228 Not Found: /user/1
+WARNING 2020-06-22 21:08:24,529 basehttp 124 "GET /user/1 HTTP/1.1" 404 7294
+ERROR 2020-06-22 21:08:33,910 log 228 Internal Server Error: /user/users/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 393, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 331, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/urls/base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/urls/resolvers.py", line 622, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'user-detail' not found. 'user-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 760, in data
+    ret = super().data
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 408, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "user-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+ERROR 2020-06-22 21:08:33,914 basehttp 124 "GET /user/users/ HTTP/1.1" 500 175471
+WARNING 2020-06-22 21:09:07,959 log 228 Not Found: /user/api-auth
+WARNING 2020-06-22 21:09:07,960 basehttp 124 "GET /user/api-auth HTTP/1.1" 404 7315
+INFO 2020-06-22 21:09:27,373 basehttp 124 "GET /user/ HTTP/1.1" 200 9862
+ERROR 2020-06-22 21:09:40,058 log 228 Internal Server Error: /user/users/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 393, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 331, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/urls/base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/urls/resolvers.py", line 622, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'user-detail' not found. 'user-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 760, in data
+    ret = super().data
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 408, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "user-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+ERROR 2020-06-22 21:09:40,059 basehttp 124 "GET /user/users/ HTTP/1.1" 500 175471
+INFO 2020-06-22 21:13:24,966 basehttp 124 "GET /user/ HTTP/1.1" 200 9862
+ERROR 2020-06-22 21:13:26,715 log 228 Internal Server Error: /user/groups/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'BoundField' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 393, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 331, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/urls/base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/urls/resolvers.py", line 622, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'permission-detail' not found. 'permission-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 154, in _get_response
+    response = response.render()
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/renderers.py", line 696, in get_context
+    'post_form': self.get_rendered_html_form(data, view, 'POST', request),
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/renderers.py", line 511, in get_rendered_html_form
+    return self.render_form_for_serializer(serializer)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/renderers.py", line 521, in render_form_for_serializer
+    {'style': {'template_pack': 'rest_framework/horizontal'}}
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/renderers.py", line 372, in render
+    return template.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/library.py", line 192, in render
+    output = self.func(*resolved_args, **resolved_kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/templatetags/rest_framework.py", line 87, in render_field
+    return renderer.render_field(field, style)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/renderers.py", line 351, in render_field
+    return template.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/utils/serializer_helpers.py", line 67, in __getattr__
+    return getattr(self._field, attr_name)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 543, in choices
+    return self.get_choices()
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 539, in get_choices
+    return self.child_relation.get_choices(cutoff)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 202, in get_choices
+    for item in queryset
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 202, in <listcomp>
+    for item in queryset
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 408, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "permission-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+ERROR 2020-06-22 21:13:26,723 basehttp 124 "GET /user/groups/ HTTP/1.1" 500 287613
+INFO 2020-06-22 21:16:56,512 basehttp 124 "GET /user/ HTTP/1.1" 200 9862
+INFO 2020-06-22 21:16:57,538 basehttp 124 "GET /user/ HTTP/1.1" 200 9862
+INFO 2020-06-22 21:16:58,137 basehttp 124 "GET /user/ HTTP/1.1" 200 9862
+ERROR 2020-06-22 21:17:00,625 log 228 Internal Server Error: /user/users/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 393, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 331, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/urls/base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/urls/resolvers.py", line 622, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'user-detail' not found. 'user-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 760, in data
+    ret = super().data
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 408, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "user-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+ERROR 2020-06-22 21:17:00,628 basehttp 124 "GET /user/users/ HTTP/1.1" 500 175471
+INFO 2020-06-22 21:18:13,260 basehttp 124 "GET /user/ HTTP/1.1" 200 9862
+ERROR 2020-06-22 21:18:15,957 log 228 Internal Server Error: /user/groups/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'BoundField' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 393, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 331, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/urls/base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/urls/resolvers.py", line 622, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'permission-detail' not found. 'permission-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 154, in _get_response
+    response = response.render()
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/renderers.py", line 696, in get_context
+    'post_form': self.get_rendered_html_form(data, view, 'POST', request),
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/renderers.py", line 511, in get_rendered_html_form
+    return self.render_form_for_serializer(serializer)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/renderers.py", line 521, in render_form_for_serializer
+    {'style': {'template_pack': 'rest_framework/horizontal'}}
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/renderers.py", line 372, in render
+    return template.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/library.py", line 192, in render
+    output = self.func(*resolved_args, **resolved_kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/templatetags/rest_framework.py", line 87, in render_field
+    return renderer.render_field(field, style)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/renderers.py", line 351, in render_field
+    return template.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/utils/serializer_helpers.py", line 67, in __getattr__
+    return getattr(self._field, attr_name)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 543, in choices
+    return self.get_choices()
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 539, in get_choices
+    return self.child_relation.get_choices(cutoff)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 202, in get_choices
+    for item in queryset
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 202, in <listcomp>
+    for item in queryset
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 408, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "permission-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+ERROR 2020-06-22 21:18:15,959 basehttp 124 "GET /user/groups/ HTTP/1.1" 500 287613
+ERROR 2020-06-22 21:18:18,366 log 228 Internal Server Error: /user/users/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 393, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 331, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/urls/base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/urls/resolvers.py", line 622, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'user-detail' not found. 'user-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 760, in data
+    ret = super().data
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 408, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "user-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+ERROR 2020-06-22 21:18:18,370 basehttp 124 "GET /user/users/ HTTP/1.1" 500 175471
+ERROR 2020-06-22 21:24:53,019 log 228 Internal Server Error: /user/users/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'BoundField' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 393, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 331, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/urls/base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/urls/resolvers.py", line 622, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'permission-detail' not found. 'permission-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 154, in _get_response
+    response = response.render()
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/renderers.py", line 696, in get_context
+    'post_form': self.get_rendered_html_form(data, view, 'POST', request),
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/renderers.py", line 511, in get_rendered_html_form
+    return self.render_form_for_serializer(serializer)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/renderers.py", line 521, in render_form_for_serializer
+    {'style': {'template_pack': 'rest_framework/horizontal'}}
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/renderers.py", line 372, in render
+    return template.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/library.py", line 192, in render
+    output = self.func(*resolved_args, **resolved_kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/templatetags/rest_framework.py", line 87, in render_field
+    return renderer.render_field(field, style)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/renderers.py", line 351, in render_field
+    return template.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/utils/serializer_helpers.py", line 67, in __getattr__
+    return getattr(self._field, attr_name)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 543, in choices
+    return self.get_choices()
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 539, in get_choices
+    return self.child_relation.get_choices(cutoff)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 202, in get_choices
+    for item in queryset
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 202, in <listcomp>
+    for item in queryset
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 408, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "permission-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+ERROR 2020-06-22 21:24:53,022 basehttp 124 "GET /user/users/ HTTP/1.1" 500 331872
+ERROR 2020-06-22 21:24:56,214 log 228 Internal Server Error: /user/users/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'BoundField' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 393, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 331, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/urls/base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/urls/resolvers.py", line 622, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'permission-detail' not found. 'permission-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 154, in _get_response
+    response = response.render()
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/renderers.py", line 696, in get_context
+    'post_form': self.get_rendered_html_form(data, view, 'POST', request),
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/renderers.py", line 511, in get_rendered_html_form
+    return self.render_form_for_serializer(serializer)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/renderers.py", line 521, in render_form_for_serializer
+    {'style': {'template_pack': 'rest_framework/horizontal'}}
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/renderers.py", line 372, in render
+    return template.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/library.py", line 192, in render
+    output = self.func(*resolved_args, **resolved_kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/templatetags/rest_framework.py", line 87, in render_field
+    return renderer.render_field(field, style)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/renderers.py", line 351, in render_field
+    return template.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/utils/serializer_helpers.py", line 67, in __getattr__
+    return getattr(self._field, attr_name)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 543, in choices
+    return self.get_choices()
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 539, in get_choices
+    return self.child_relation.get_choices(cutoff)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 202, in get_choices
+    for item in queryset
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 202, in <listcomp>
+    for item in queryset
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 408, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "permission-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+ERROR 2020-06-22 21:24:56,217 basehttp 124 "GET /user/users/ HTTP/1.1" 500 331885
+WARNING 2020-06-22 21:26:14,233 log 228 Not Found: /user/users/
+WARNING 2020-06-22 21:26:14,234 basehttp 124 "GET /user/users/ HTTP/1.1" 404 6021
+INFO 2020-06-22 21:26:16,813 basehttp 124 "GET /user/ HTTP/1.1" 200 9729
+INFO 2020-06-22 21:26:16,830 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2020-06-22 21:26:16,838 basehttp 124 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2020-06-22 21:26:16,848 basehttp 124 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2020-06-22 21:26:16,853 basehttp 124 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2020-06-22 21:26:16,855 basehttp 124 "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 304 0
+INFO 2020-06-22 21:26:16,856 basehttp 124 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2020-06-22 21:26:16,862 basehttp 124 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2020-06-22 21:26:16,865 basehttp 124 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2020-06-22 21:26:16,867 basehttp 124 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2020-06-22 21:26:16,869 basehttp 124 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2020-06-22 21:26:17,738 basehttp 124 "GET /user/ HTTP/1.1" 200 9729
+ERROR 2020-06-22 21:26:18,839 log 228 Internal Server Error: /user/groups/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'BoundField' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 393, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 331, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/urls/base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/urls/resolvers.py", line 622, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'permission-detail' not found. 'permission-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 154, in _get_response
+    response = response.render()
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/renderers.py", line 696, in get_context
+    'post_form': self.get_rendered_html_form(data, view, 'POST', request),
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/renderers.py", line 511, in get_rendered_html_form
+    return self.render_form_for_serializer(serializer)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/renderers.py", line 521, in render_form_for_serializer
+    {'style': {'template_pack': 'rest_framework/horizontal'}}
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/renderers.py", line 372, in render
+    return template.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/library.py", line 192, in render
+    output = self.func(*resolved_args, **resolved_kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/templatetags/rest_framework.py", line 87, in render_field
+    return renderer.render_field(field, style)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/renderers.py", line 351, in render_field
+    return template.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/utils/serializer_helpers.py", line 67, in __getattr__
+    return getattr(self._field, attr_name)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 543, in choices
+    return self.get_choices()
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 539, in get_choices
+    return self.child_relation.get_choices(cutoff)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 202, in get_choices
+    for item in queryset
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 202, in <listcomp>
+    for item in queryset
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 408, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "permission-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+ERROR 2020-06-22 21:26:18,843 basehttp 124 "GET /user/groups/ HTTP/1.1" 500 287613
+INFO 2020-06-22 21:27:39,152 basehttp 124 "GET /user/ HTTP/1.1" 200 9862
+INFO 2020-06-22 21:27:39,244 basehttp 124 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+ERROR 2020-06-22 21:27:40,497 log 228 Internal Server Error: /user/users/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 393, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 331, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/urls/base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/urls/resolvers.py", line 622, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'user-detail' not found. 'user-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 760, in data
+    ret = super().data
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 408, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "user-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+ERROR 2020-06-22 21:27:40,501 basehttp 124 "GET /user/users/ HTTP/1.1" 500 175471
+ERROR 2020-06-22 21:28:11,366 log 228 Internal Server Error: /user/groups/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'BoundField' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 393, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 331, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/urls/base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/urls/resolvers.py", line 622, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'permission-detail' not found. 'permission-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 154, in _get_response
+    response = response.render()
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/renderers.py", line 696, in get_context
+    'post_form': self.get_rendered_html_form(data, view, 'POST', request),
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/renderers.py", line 511, in get_rendered_html_form
+    return self.render_form_for_serializer(serializer)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/renderers.py", line 521, in render_form_for_serializer
+    {'style': {'template_pack': 'rest_framework/horizontal'}}
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/renderers.py", line 372, in render
+    return template.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/library.py", line 192, in render
+    output = self.func(*resolved_args, **resolved_kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/templatetags/rest_framework.py", line 87, in render_field
+    return renderer.render_field(field, style)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/renderers.py", line 351, in render_field
+    return template.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/utils/serializer_helpers.py", line 67, in __getattr__
+    return getattr(self._field, attr_name)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 543, in choices
+    return self.get_choices()
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 539, in get_choices
+    return self.child_relation.get_choices(cutoff)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 202, in get_choices
+    for item in queryset
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 202, in <listcomp>
+    for item in queryset
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/relations.py", line 408, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "permission-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+ERROR 2020-06-22 21:28:11,369 basehttp 124 "GET /user/groups/ HTTP/1.1" 500 287613
+INFO 2020-06-22 21:39:31,044 basehttp 124 "GET /article/ HTTP/1.1" 200 23255
+WARNING 2020-06-22 21:39:31,077 log 228 Not Found: /image/two.jpg
+WARNING 2020-06-22 21:39:31,077 basehttp 124 "GET /image/two.jpg HTTP/1.1" 404 5693
+INFO 2020-06-22 21:39:45,931 basehttp 124 "GET /articles/ HTTP/1.1" 200 20636
+WARNING 2020-06-22 21:40:46,600 log 228 Not Found: /article/articles/
+WARNING 2020-06-22 21:40:46,621 basehttp 124 "GET /article/articles/ HTTP/1.1" 404 5709
+INFO 2020-06-22 21:42:05,895 basehttp 124 "GET /article_api HTTP/1.1" 301 0
+INFO 2020-06-22 21:42:05,997 basehttp 124 "GET /article_api/ HTTP/1.1" 200 20660
+INFO 2020-06-22 21:42:06,022 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2020-06-22 21:42:06,026 basehttp 124 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2020-06-22 21:42:06,032 basehttp 124 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2020-06-22 21:42:06,042 basehttp 124 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2020-06-22 21:42:06,044 basehttp 124 "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 304 0
+INFO 2020-06-22 21:42:06,052 basehttp 124 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2020-06-22 21:42:06,058 basehttp 124 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2020-06-22 21:42:06,063 basehttp 124 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2020-06-22 21:42:06,073 basehttp 124 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2020-06-22 21:42:06,079 basehttp 124 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2020-06-22 21:42:49,713 basehttp 124 "GET /article_api/?format=json HTTP/1.1" 200 2488
+INFO 2020-06-22 21:42:56,106 basehttp 124 "GET /article_api/ HTTP/1.1" 200 20660
+INFO 2020-06-22 21:42:58,874 basehttp 124 "GET /article_api/?format=api HTTP/1.1" 200 20726
+INFO 2020-06-22 21:42:58,920 basehttp 124 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+INFO 2020-06-22 21:43:01,912 basehttp 124 "GET /article_api/?format=json HTTP/1.1" 200 2488
+INFO 2020-06-22 21:43:14,382 basehttp 124 "OPTIONS /article_api/ HTTP/1.1" 200 20689
+INFO 2020-06-22 21:43:15,517 basehttp 124 "OPTIONS /article_api/ HTTP/1.1" 200 20689
+INFO 2020-06-22 21:43:18,299 basehttp 124 "OPTIONS /article_api/ HTTP/1.1" 200 20689
+INFO 2020-06-22 21:43:33,915 basehttp 124 "OPTIONS /article_api/ HTTP/1.1" 200 20689
+INFO 2020-06-22 21:43:36,987 basehttp 124 "GET /article_api/ HTTP/1.1" 200 20660
+INFO 2020-06-22 21:44:17,183 basehttp 124 "GET / HTTP/1.1" 200 8251
+INFO 2020-06-22 21:45:19,240 basehttp 124 "GET /article_api/2 HTTP/1.1" 301 0
+INFO 2020-06-22 21:45:19,304 basehttp 124 "GET /article_api/2/ HTTP/1.1" 200 18973

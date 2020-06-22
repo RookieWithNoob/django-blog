@@ -356,3 +356,5 @@ HAYSTACK_SEARCH_RESULTS_PER_PAGE = 4
 HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
 # 防止标题被截断
 HAYSTACK_CUSTOM_HIGHLIGHTER = 'article.utils.Highlighter'
+
+
