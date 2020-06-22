@@ -60,7 +60,8 @@ INSTALLED_APPS = [
     # # 可添加需要的第三方登录
     # 'allauth.socialaccount.providers.github',
 
-    'haystack', # 注册全文检索框架 将haystack放在最后
+    'haystack',  # 注册全文检索框架 将haystack放在最后
+    'rest_framework', # api
 
 ]
 
@@ -344,8 +345,8 @@ MDEDITOR_CONFIGS = {
 HAYSTACK_CONNECTIONS = {
     'default': {
         'ENGINE': 'haystack.backends.elasticsearch_backend.ElasticsearchSearchEngine',
-        'URL': 'http://127.0.0.1:9200/',    # 此处为elasticsearch运行的服务器ip地址和端口
-        'INDEX_NAME': 'wjpython',           # 指定elasticserach建立的索引库名称
+        'URL': 'http://127.0.0.1:9200/',  # 此处为elasticsearch运行的服务器ip地址和端口
+        'INDEX_NAME': 'wjpython',  # 指定elasticserach建立的索引库名称
     },
 }
 

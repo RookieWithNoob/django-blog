@@ -3,7 +3,6 @@
 {% block title %}吕奉先:)文章详情{% endblock %}
 {% block link %}
     <link rel="stylesheet" href="{% static 'css/blog.css' %}"/>
-{#    <link rel="stylesheet" href="{% static 'css/message.css' %}"/>#}
     <!-- 引入monikai.css -->
     <link rel="stylesheet" href="{% static 'css/monokai.css' %}">
     {#    <link rel="stylesheet" href="{% static 'css/aplayer.css' %}"/>#}
@@ -55,16 +54,19 @@
                             </div>
                             <div id="aplayer" style="margin:5px 0"></div>
                             <h6>延伸阅读</h6>
-                            <ol class="b-relation"></ol>
+                            <ol class="b-relation">
+                                <li class="f-toe">上一篇:<a href="#">没有了</a></li>
+                                <li class="f-toe">下一篇:<a href="#">没有了</a></li>
+                            </ol>
                         </div>
-                        <div class="bdsharebuttonbox share" data-tag="share_1">
-                            <ul>
-                                <li class="f-praise"><span><a class="s-praise"></a></span></li>
-                                <li class="f-weinxi"><a class="s-weinxi" data-cmd="weixin"></a></li>
-                                <li class="f-sina"><a class="s-sina" data-cmd="tsina"></a></li>
-                                <li class="f-qq" href="#"><i class="fa fa-qq"></i></li>
-                                <li class="f-qzone"><a class="s-qzone" data-cmd="qzone"></a></li>
-                            </ul>
+                        <div class="article-action" style="margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;">
+                            <div class="btn-zan" data-id="245" style=""><i class="fa fa-thumbs-up" aria-hidden="true"></i> 赞
+                                <span class="article-action-num">(17)</span></div>
+                            <div class="btn-dashang"><i class="fa fa-jpy" aria-hidden="true"></i> 打赏 <span
+                                    class="dashang-img"><span><img src="/images/dashang.jpg" alt="微信扫一扫"> 微信扫码打赏</span></span>
+                            </div>
                         </div>
                         <div class="f-cb"></div>
                         <div class="mt20 f-fwn fs-24 fc-grey comment">
@@ -86,14 +88,14 @@
                                             <div class="layui-form-item" style="margin-top: 10px;
     margin-bottom: 0px;">
                                                 <button class="layui-btn" lay-submit="formLeaveMessage"
-                                                        lay-filter="formLeaveMessage">提交留言
+                                                        lay-filter="formLeaveMessage">提交
                                                 </button>
                                             </div>
                                         </form>
                                     {% else %}
                                         <h1 style="text-align:center;margin: 10px">请<a style="color: #9c27b0"
                                                                                        href="{% url 'user:login' %}?next=
-{% url 'article:article_detail' article.id%}">登录</a>后留言
+{% url 'article:article_detail' article.id %}">登录</a>后留言
                                         </h1>
                                     {% endif %}
                                 </div>
