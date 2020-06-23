@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Article, Tags, FriendLink, Comments, HotArticles
+from .models import Article, Tags, FriendLink, Comments, HotArticles, RecommendRead
 
 
 # Register your models here.
@@ -69,8 +69,19 @@ class HotArticlesAmdin(admin.ModelAdmin):
     ordering = ('-create_time',)
 
 
+class RecommendReadAmdin(admin.ModelAdmin):
+    '''设置列表可显示的字段'''
+    list_display = ('recommend_title', 'recommend_url','create_time',)
+
+    '''每页显示条目数'''
+    list_per_page = 5
+
+    '''按发布日期排序'''
+    ordering = ('-create_time',)
+
 admin.site.register(Article, ArticleAmdin)
 admin.site.register(Tags, TagAmdin)
 admin.site.register(FriendLink, FriendLinkAmdin)
 admin.site.register(Comments, CommentsAmdin)
 admin.site.register(HotArticles, HotArticlesAmdin)
+admin.site.register(RecommendRead, RecommendReadAmdin)

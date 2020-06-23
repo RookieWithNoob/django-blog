@@ -8,7 +8,7 @@ from django.core.paginator import Paginator, PageNotAnInteger, InvalidPage  # �
 from haystack.generic_views import SearchView  # 搜索
 from django.conf import settings
 # 导入数据模型ArticlePost
-from .models import HotArticles, Article, Tags, FriendLink, Comments
+from .models import HotArticles, Article, Tags, FriendLink, Comments, RecommendRead
 from .form import CommentForm
 
 from rest_framework import viewsets
@@ -78,9 +78,12 @@ class ArticleView(View):
         # 通过外键获取新闻的标题,并按照点击量降序的方式, 抽取8篇最热门的文章
         hot_articles = Article.objects.only(
             'title', ).filter(is_delete=False).order_by('-views')[:8]
+
+        recommend_reads = RecommendRead.objects.all()
         # 需要传递给模板（templates）的对象
         context = {'articles': articles,
-                   'hot_articles': hot_articles, }
+                   'hot_articles': hot_articles,
+                   'recommend_reads' : recommend_reads,}
         # render函数：载入模板，并返回context对象
         return render(request, 'article/article_list.html', context)
 

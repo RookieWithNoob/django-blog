@@ -1,5 +1,6 @@
 {% extends 'base/base.html' %}
 {% load staticfiles %}
+{% load my_filters_and_tags %}
 {% block title %}吕奉先:)文章列表{% endblock %}
 {% block link %}
     <link rel="stylesheet" href="{% static 'css/blog.css' %}"/>
@@ -17,8 +18,8 @@
                             {#                        语法在获取moidel中字段带有choices的字段属性时；{{course.get_属性名_display}}#}
                             <div class="fc-flag">{{ article.get_attributes_display }}</div>
                             <h5 class="title">
-                                <span class="fc-blue">【{{ article.tag.name }}】</span>
                                 <a href="{% url 'article:article_detail' article.id %}">{{ article.title }}</a>
+                                <span class="fc-blue">【{{ article.create_time|timesince_zh }}】</span>
                             </h5>
                             <div class="time">
                                 <span class="day">{{ article.create_time | date:'j' }}</span>
@@ -28,7 +29,7 @@
                             </div>
                             <div class="content">
                                 <a href="{% url 'article:article_detail' article.id %}" class="cover img-light">
-                                    <img src="{{ article.image_url }}">
+                                    <img src="{{ article.image_url.url }}">
                                 </a>
                                 {#                                其中的|slice:'100'是Django的过滤器语法，表示取出正文的前100个字符，避免摘要太长。#}
                                 {{ article.summary |slice:'100' }}
@@ -130,12 +131,12 @@
                     </div>
                 </div>
                 <div class="other-item">
-                    <h5 class="other-item-title">动态信息</h5>
+                    <h5 class="other-item-title">推荐阅读</h5>
                     <div class="inner">
                         <ul class="hot-list-article">
-                            <li><a href="#">.NET Spire.Doc组件</a></li>
-                            <li><a href="#">MUI框架-快速开发APP</a></li>
-                            <li><a href="#">2018最新版QQ音乐api调用</a></li>
+                            {% for recommend_read in recommend_reads %}
+                            <li><a href="{{ recommend_read.recommend_url }}">{{ recommend_read.recommend_title }}</a></li>
+                            {% endfor %}
                         </ul>
                     </div>
                 </div>

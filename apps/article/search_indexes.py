@@ -14,7 +14,7 @@ class ArticlesIndex(indexes.SearchIndex, indexes.Indexable):
     title = indexes.CharField(model_attr='title')
     summary = indexes.CharField(model_attr='summary')
     content = indexes.CharField(model_attr='content')
-    image_url = indexes.CharField(model_attr='image_url')
+    # image_url = indexes.CharField(model_attr='image_url')
 
     def get_model(self):
         """

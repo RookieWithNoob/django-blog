@@ -50,7 +50,7 @@ INSTALLED_APPS = [
     # 以下是自定义的app,分别对应一些页面或功能
     'article',  # 添加文章模块
     'user',  # 添加用户模块
-
+    'mptt',  # 评论树形结构
     'mdeditor',  # 富文本编辑器
 
     # 'allauth',
@@ -61,7 +61,7 @@ INSTALLED_APPS = [
     # 'allauth.socialaccount.providers.github',
 
     'haystack',  # 注册全文检索框架 将haystack放在最后
-    'rest_framework', # api
+    'rest_framework',  # api
 
 ]
 
@@ -165,7 +165,7 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 # 媒体文件收集
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media').replace("\\", "/")
 
 # 发送邮件配置
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
@@ -356,5 +356,3 @@ HAYSTACK_SEARCH_RESULTS_PER_PAGE = 4
 HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
 # 防止标题被截断
 HAYSTACK_CUSTOM_HIGHLIGHTER = 'article.utils.Highlighter'
-
-

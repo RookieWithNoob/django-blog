@@ -31,7 +31,7 @@
 }
 
 .article-item {
-    padding: 20px 30px 25px 30px;
+    padding: 20px 30px 18px 30px;
     position: relative; /*overflow:hidden;*/
     margin-top: 20px;
     background-color: #fff
@@ -49,6 +49,8 @@
     left: -18px;
     top: 9px
 }
+
+/*.article-item img {max-width: 100%;height: auto;}*/
 
 .article-item .title {
     line-height: 30px;
@@ -164,7 +166,7 @@
 
 .article-item .footer .tags .tag {
     display: inline-block;
-    font-size: 16px;
+    font-size: 14px;
     padding: 0px 18px;
     background-color: #f1f2f0;
     color: #787977;

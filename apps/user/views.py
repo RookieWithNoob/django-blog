@@ -173,6 +173,7 @@ class MessageView(View):
                 #                              'markdown.extensions.toc',
                 #                          ])
                 print(request.META['REMOTE_ADDR'])
+                # print(request.META['HTTP_X_FORWARDED_FOR'])
                 # 获取地区
                 message.addr = get_ip_address('171.83.97.52')
                 # 将新文章保存到数据库中

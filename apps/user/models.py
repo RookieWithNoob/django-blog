@@ -23,7 +23,7 @@ class User(AbstractUser, BaseModel):
 
     # mobile = models.CharField('手机号', max_length=11, unique=True, validators=[mobile_validator, ],
     #                           help_text='手机号', error_messages={'unique': "此手机号已注册"})
-    IMG_LINK = 'https://img1.doubanio.com/view/group_topic/l/public/p289128177.webp'
+    IMG_LINK = 'https://thirdqq.qlogo.cn/g?b=oidb&k=5ia1t4Dz2o1DxWzbpKrMic2Q&s=100&t=1592589321'
     user_image_url = models.CharField('头像链接', max_length=120, default=IMG_LINK, help_text='图片链接')
 
     class Meta:

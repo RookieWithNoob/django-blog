@@ -68,8 +68,9 @@ class Article(BaseModel):
     )
     attributes = models.SmallIntegerField('是否原创', choices=status_choices, default=1)
 
-    IMG_LINK = '/image/two.jpg'
-    image_url = models.CharField('图片链接', max_length=200, default=IMG_LINK, help_text='图片链接')
+    # IMG_LINK = '/image/two.jpg'
+    # image_url = models.CharField('图片链接', max_length=200, default=IMG_LINK, help_text='图片链接')
+    image_url = models.ImageField(upload_to='article/%Y%m%d/', verbose_name='文章图片')
 
     # 定义分类标签的外键字段, 一般外键字段定义在`一对多`中多的一方
     tag = models.ForeignKey('Tags', verbose_name='文章标签',on_delete=models.SET_NULL, null=True)
@@ -167,3 +168,20 @@ class HotArticles(BaseModel):
 
     def __str__(self):
         return '<热门新闻{}>'.format(self.id)
+
+
+class RecommendRead(BaseModel):
+    """
+    推荐阅读
+    """
+    recommend_title = models.CharField('标题', max_length=150, help_text='标题')
+    recommend_url = models.URLField('文章地址', help_text='请填写推荐文章的地址')
+
+    class Meta:
+        db_table = 'tb_recommend_read'
+        verbose_name = '推荐阅读'
+        verbose_name_plural = verbose_name
+
+    def __str__(self):
+        # django会帮我们在生成迁移的时候自动添加id字段
+        return self.recommend_title
