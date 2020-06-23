@@ -49,7 +49,7 @@ class Message(BaseModel):
     addr = models.CharField('用户ip地址', max_length=20, help_text='用户的ip地址',null=True, blank=True,)
     content = models.TextField('内容', help_text='内容')
     # 本项目涉及二级评论，修改Comments模型，添加一个parent字段
-    parent = models.ForeignKey('self', verbose_name='父留言', on_delete=models.CASCADE, null=True, blank=True, )
+    # parent = models.ForeignKey('self', verbose_name='父留言', on_delete=models.CASCADE, null=True, blank=True, )
 
     class Meta:
         # ordering = ['-update_time', '-id']
@@ -60,3 +60,28 @@ class Message(BaseModel):
     def __str__(self):
         # django会帮我们在生成迁移的时候自动添加id字段
         return self.content[:20]
+
+
+"""
+    这里可以直接在settings里设置要评论的条目和所属作者
+    比如我的项目里的是：
+    # 自定义用户model
+    AUTH_USER_MODEL = 'users.user'
+    # two comments settings
+    COMMENT_ENTRY_MODEL = 'forum.post'
+"""
+
+class MessagesReply(BaseModel):
+    comment = models.ForeignKey(Message, verbose_name='要回复的留言', on_delete=models.CASCADE, related_name='comment_reply', blank=True, null=True)
+    re_content = models.TextField('内容', help_text='内容')
+    author_from = models.ForeignKey('User', verbose_name='回复者',on_delete=models.CASCADE, related_name='user_reply', blank=True, null=True)
+    author_to = models.ForeignKey('User',verbose_name='被回复的人', on_delete=models.CASCADE, blank=True, null=True)
+
+    class Meta:
+        ordering = ['-create_time']
+        db_table = 'tb_messages_reply'
+        verbose_name = '二级留言'
+        verbose_name_plural = verbose_name
+
+    def __str__(self):
+        return '%s @ %s ' % (self.author_from.username, self.author_to.username)

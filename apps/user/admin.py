@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import User, Message
+from .models import User, Message, MessagesReply
 
 
 # Register your models here.
@@ -27,7 +27,7 @@ class UserAmdin(admin.ModelAdmin):
 
 class MessageAmdin(admin.ModelAdmin):
     '''设置列表可显示的字段'''
-    list_display = ('author', 'parent', 'create_time',)
+    list_display = ('author', 'create_time',)
 
     '''设置过滤选项  搜索'''
     list_filter = ('author', 'create_time',)
@@ -39,5 +39,20 @@ class MessageAmdin(admin.ModelAdmin):
     ordering = ('-create_time',)
 
 
+class MessagesReplyAmdin(admin.ModelAdmin):
+    '''设置列表可显示的字段'''
+    list_display = ('author_from', 'author_to','create_time')
+
+    '''设置过滤选项  搜索'''
+    list_filter = ('create_time',)
+
+    '''每页显示条目数'''
+    list_per_page = 10
+
+    '''按发布日期排序'''
+    ordering = ('-create_time',)
+
 admin.site.register(User, UserAmdin)
 admin.site.register(Message, MessageAmdin)
+admin.site.register(MessagesReply, MessagesReplyAmdin)
+

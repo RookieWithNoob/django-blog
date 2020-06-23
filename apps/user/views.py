@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, reverse
 from django.views.generic import View
-from .forms import RegisterForm, LoginForm, MessageForm
+from .forms import RegisterForm, LoginForm, MessageForm, ReplyForm
 from django.core.paginator import Paginator, PageNotAnInteger, InvalidPage  # 分页
 from django.contrib.auth import authenticate, login, logout
 import logging
@@ -144,16 +144,38 @@ class MessageView(View):
         paginator = Paginator(messages_list, 8)
         # 获取页面数据, get_page可以容错
         messages = paginator.get_page(page)
-
+        print(dir(messages[0]))
         context = {'messages': messages,
                    'messages_list': messages_list,}
                    # 'message_form':message_form}
         return render(request, 'message/message.html', context)
 
     # @login_required()
-    def post(self, request):
+    def post(self, request,):
         # 1.校验参数
-        # print("**************************************************************************")
+        print("**************************************************************************")
+        comment_id = request.POST.get('comment_id')  # 回复者
+        author_to_id = request.POST.get('author_to_id')  # 被回复者
+        if comment_id and author_to_id:
+            comment = Message.objects.get(id=comment_id)
+            author_to = User.objects.get(id=author_to_id)
+            form = ReplyForm(data=request.POST)
+            if form.is_valid():
+                user = request.user
+                if user.is_authenticated:
+                    content = form.cleaned_data.get('content')
+                    new_reply = form.save(commit=False)
+                    new_reply.comment = comment
+                    new_reply.author_from = request.user
+                    new_reply.author_to = author_to
+                    new_reply.content = content
+                    new_reply.save()
+                    return redirect(reverse('user:message'))
+                else:
+                    return redirect(reverse('user:login'))
+            else:
+                return HttpResponse("表单内容有误，请重新填写。")
+
         message_form = MessageForm(data=request.POST, )
         print(message_form)
         if message_form.is_valid():

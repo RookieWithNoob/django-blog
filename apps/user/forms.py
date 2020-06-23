@@ -9,7 +9,7 @@ from mdeditor.fields import MDTextFormField
 
 # from verification.constants import SMS_CODE_LENGTH
 # from verification.forms import mobile_validator
-from user.models import User, Message
+from .models import User, Message, MessagesReply
 
 
 class RegisterForm(forms.ModelForm):  # 对数据库进行操作的表单应该继承forms.ModelForm，可以自动生成模型中已有的字段。
@@ -188,3 +188,13 @@ class MessageForm(forms.ModelForm):
     class Meta:
         model = Message
         fields = ['content']
+        labels = {'content': ''}
+        widgets = {'content': forms.Textarea(attrs={'rows': 3, 'placeholder': '写下你的评论...'})}
+
+
+class ReplyForm(forms.ModelForm):
+    class Meta:
+        model = MessagesReply
+        fields = ['re_content']
+        labels = {'re_content': ''}
+        widgets = {'re_content': forms.Textarea(attrs={'rows': 3, 'placeholder': '写下你的评论...'})}

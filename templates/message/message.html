@@ -1,5 +1,6 @@
 {% extends 'base/base.html' %}
 {% load staticfiles %}
+{% load mptt_tags %}
 {% block title %}吕奉先:)留言板{% endblock %}
 {% block link %}
     <link rel="stylesheet" href="{% static 'css/message.css' %}"/>
@@ -71,59 +72,67 @@
                                 {% if message.author.is_superuser %}
                                     <span style="display: inline-block;padding: 0 5px;margin-right: 10px;color: #fff;background: #9c27b0;border-radius: 3px;font-size: 12px;">站长</span>
                                 {% endif %}
-{#                                <span style="color: #a93838">{{ request.META.HTTP_USER_AGENT }}</span>#}
+                                {#                                <span style="color: #a93838">{{ request.META.HTTP_USER_AGENT }}</span>#}
                             </div>
                             <div class="comment-content">
                                 {{ message.content|safe }}
                             </div>
                             <p class="info info-footer">
                                 <i class="fa fa-map-marker" aria-hidden="true"></i>
-{#                                                                <p>{{ request.META.HTTP_X_FORWARDED_FOR }}</p>#}
+                                {#                                                                <p>{{ request.META.HTTP_X_FORWARDED_FOR }}</p>#}
                                 {#                            {{ request.META.REMOTE_ADDR }}#}
                                 {#                                {{ request.META }}     获取请求信息     #}
                                 <span>{{ message.addr }}</span>
                                 <span class="comment-time">{{ message.create_time|date:"Y-m-d H:i:s" }}</span>
                                 {% if user.is_authenticated %}
-                                    <a href="javascript:;" class="btn-reply" data-targetid="1"
+                                    <a href="javascript:;" class="btn-reply"
                                        data-targetname="{{ message.author.username }}">回复</a>
                                 {% else %}
+                                    <a class="btn-reply" href="{% url 'user:login' %}?next=
+{% url 'user:message' %}">回复</a>
                                 {% endif %}
                             </p>
                         </div>
                         <hr/>
-                        <div class="comment-child">
-                            <a name="reply-1"></a>
-                            <img src="https://thirdqq.qlogo.cn/qqapp/101465933/7627F745B95BFAC18C6C481FE72B4EB1/100">
-                            <div class="info">
-                                <span class="username">燕十四</span>
-                                {#                                {% if message.author.is_superuser %}#}
-                                {#                                    <span style="display: inline-block;padding: 0 5px;margin-right: 10px;color: #fff;background: #9c27b0;border-radius: 3px;font-size: 12px;">站长</span>#}
-                                {#                                {% endif %}#}
-                                <span style="padding-right:0;margin-left:-5px;">回复</span>
-                                <span class="username">{{ message.author.username }}</span>
-                                {#                                {% if message.author.is_superuser %}#}
-                                {#                                    <span style="display: inline-block;padding: 0 5px;margin-right: 10px;color: #fff;background: #9c27b0;border-radius: 3px;font-size: 12px;">站长</span>#}
-                                {#                                {% endif %}#}
-                                <span>一剑光寒十九洲</span>
-                            </div>
-                            <p class="info">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <span>四川</span>
-                                <span class="comment-time">2018-01-01</span>
-                                {% if user.is_authenticated %}
-                                    <a href="javascript:;" class="btn-reply" data-targetid="2"
-                                       data-targetname="燕十四">回复</a>
-                                    {#                                {% else %}#}
-                                {% endif %}
-                            </p>
-                        </div>
+                        {% get_reply_list comment as replies %}
+{#                            {% for re in message.object_list %}#}
+                                <div class="comment-child">
+                                    <a name="reply-1"></a>
+                                    <img src="https://thirdqq.qlogo.cn/qqapp/101465933/7627F745B95BFAC18C6C481FE72B4EB1/100">
+                                    <div class="info">
+                                        <span class="username">{{ message.1 }}</span>
+                                        {#                                {% if message.author.is_superuser %}#}
+                                        {#                                    <span style="display: inline-block;padding: 0 5px;margin-right: 10px;color: #fff;background: #9c27b0;border-radius: 3px;font-size: 12px;">站长</span>#}
+                                        {#                                {% endif %}#}
+                                        <span style="padding-right:0;margin-left:-5px;">回复</span>
+                                        <span class="username">{{ message.author.username }}</span>
+                                        {#                                {% if message.author.is_superuser %}#}
+                                        {#                                    <span style="display: inline-block;padding: 0 5px;margin-right: 10px;color: #fff;background: #9c27b0;border-radius: 3px;font-size: 12px;">站长</span>#}
+                                        {#                                {% endif %}#}
+                                        <span>{{ re.re_content }}</span>
+                                    </div>
+                                    <p class="info">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        <span>四川</span>
+                                        <span class="comment-time">2018-01-01</span>
+                                        {% if user.is_authenticated %}
+                                            <a href="javascript:;" class="btn-reply" data-targetid="2"
+                                               data-targetname="燕十四">回复</a>
+                                        {% else %}
+                                            <a class="btn-reply" href="{% url 'user:login' %}?next=
+{% url 'user:message' %}">回复</a>
+                                        {% endif %}
+                                    </p>
+                                </div>
+{#                            {% endfor %}#}
+                        {% endif %}
                         <div class="replycontainer layui-hide">
                             <form class="layui-form" action="" method="post">
                                 {% csrf_token %}
                                 <input type="hidden" name="remarkId" value="1">
                                 <input type="hidden" name="targetUserId" value="0">
                                 <div class="layui-form-item">
-                                <textarea name="replyContent" lay-verify="replyContent" placeholder="请输入回复内容"
+                                <textarea name="re_content" lay-verify="replyContent" placeholder="请输入回复内容"
                                           class="layui-textarea" style="min-height:80px;"></textarea>
                                 </div>
                                 <div class="layui-form-item">
@@ -135,7 +144,7 @@
                             </form>
                         </div>
                     </li>
-                {% endfor %}
+
             </ul>
             {# 实现分页标签的代码 #}
             {# 这里使用 bootstrap 渲染页面 #}

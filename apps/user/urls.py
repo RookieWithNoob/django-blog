@@ -12,5 +12,6 @@ urlpatterns = [
     path('register/', RegisterView.as_view(), name='register'),  # 用户注册
     path('logout/', LogoutView.as_view(), name='logout'),  # 用户退出
     path('message/', MessageView.as_view(), name='message'),  # 留言
+
 ]
 
