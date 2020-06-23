@@ -29,12 +29,12 @@ layui.use(['element', 'jquery', 'form', 'layedit', 'flow'], function () {
          if ($(this).text() == '回复') {
              $container.find('textarea').attr('placeholder', '回复【' + targetName + '】');
              $container.removeClass('layui-hide');
-             $container.find('input[name="targetUserId"]').val(targetId);
+             $container.find('input[name="author_to_id"]').val(targetId);
              $(this).parents('.message-list li').find('.btn-reply').text('回复');
              $(this).text('收起');
          } else {
              $container.addClass('layui-hide');
-             $container.find('input[name="targetUserId"]').val(0);
+             $container.find('input[name="author_to_id"]').val(0);
              $(this).text('回复');
          }
      });

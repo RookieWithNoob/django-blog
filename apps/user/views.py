@@ -144,7 +144,7 @@ class MessageView(View):
         paginator = Paginator(messages_list, 8)
         # 获取页面数据, get_page可以容错
         messages = paginator.get_page(page)
-        print(dir(messages[0]))
+
         context = {'messages': messages,
                    'messages_list': messages_list,}
                    # 'message_form':message_form}
@@ -159,7 +159,10 @@ class MessageView(View):
         if comment_id and author_to_id:
             comment = Message.objects.get(id=comment_id)
             author_to = User.objects.get(id=author_to_id)
+            print("准备回复给哪个评论{}".format(comment))
+            print("被回复的是哪个{}".format(author_to))
             form = ReplyForm(data=request.POST)
+            # print(form)
             if form.is_valid():
                 user = request.user
                 if user.is_authenticated:
@@ -177,7 +180,7 @@ class MessageView(View):
                 return HttpResponse("表单内容有误，请重新填写。")
 
         message_form = MessageForm(data=request.POST, )
-        print(message_form)
+        # print(message_form)
         if message_form.is_valid():
             user = request.user
             if user.is_authenticated:

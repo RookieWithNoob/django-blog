@@ -1,6 +1,5 @@
 {% extends 'base/base.html' %}
 {% load staticfiles %}
-{% load mptt_tags %}
 {% block title %}吕奉先:)留言板{% endblock %}
 {% block link %}
     <link rel="stylesheet" href="{% static 'css/message.css' %}"/>
@@ -85,7 +84,7 @@
                                 <span>{{ message.addr }}</span>
                                 <span class="comment-time">{{ message.create_time|date:"Y-m-d H:i:s" }}</span>
                                 {% if user.is_authenticated %}
-                                    <a href="javascript:;" class="btn-reply"
+                                    <a href="javascript:;" class="btn-reply" data-targetid="{{ message.author.id }}"
                                        data-targetname="{{ message.author.username }}">回复</a>
                                 {% else %}
                                     <a class="btn-reply" href="{% url 'user:login' %}?next=
@@ -93,44 +92,53 @@
                                 {% endif %}
                             </p>
                         </div>
-                        <hr/>
-                        {% get_reply_list comment as replies %}
-{#                            {% for re in message.object_list %}#}
+
+                        {#                        {{ message.comment_reply.all }}#}
+                        {% if  message.comment_reply.all %}
+                            <hr/>
+                            {% for re in message.comment_reply.all %}
                                 <div class="comment-child">
                                     <a name="reply-1"></a>
-                                    <img src="https://thirdqq.qlogo.cn/qqapp/101465933/7627F745B95BFAC18C6C481FE72B4EB1/100">
+                                    <img src="{{ re.author_from.user_image_url }}">
                                     <div class="info">
-                                        <span class="username">{{ message.1 }}</span>
+                                        <span class="username">{{ re.author_from.username }}</span>
+                                        {% if re.author_from.is_superuser %}
+                                            <span style="display: inline-block;padding: 0 5px;margin-right: 10px;color: #fff;background: #9c27b0;border-radius: 3px;font-size: 12px;">站长</span>
+                                        {% endif %}
                                         {#                                {% if message.author.is_superuser %}#}
                                         {#                                    <span style="display: inline-block;padding: 0 5px;margin-right: 10px;color: #fff;background: #9c27b0;border-radius: 3px;font-size: 12px;">站长</span>#}
                                         {#                                {% endif %}#}
                                         <span style="padding-right:0;margin-left:-5px;">回复</span>
-                                        <span class="username">{{ message.author.username }}</span>
+                                        <span class="username">{{ re.author_to.username }}</span>
+{#                                        {% if re.author_from.is_superuser %}#}
+{#                                            <span style="display: inline-block;padding: 0 5px;margin-right: 10px;color: #fff;background: #9c27b0;border-radius: 3px;font-size: 12px;">站长</span>#}
+{#                                        {% endif %}#}
                                         {#                                {% if message.author.is_superuser %}#}
                                         {#                                    <span style="display: inline-block;padding: 0 5px;margin-right: 10px;color: #fff;background: #9c27b0;border-radius: 3px;font-size: 12px;">站长</span>#}
                                         {#                                {% endif %}#}
-                                        <span>{{ re.re_content }}</span>
+                                        <span>{{ re.re_content|safe }}</span>
                                     </div>
                                     <p class="info">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <span>四川</span>
-                                        <span class="comment-time">2018-01-01</span>
+                                        {#                                    <i class="fa fa-map-marker" aria-hidden="true"></i>#}
+                                        {#                                    <span>四川</span>#}
+                                        <span class="comment-time">{{ re.create_time|date:"Y-m-d H:i:s" }}</span>
                                         {% if user.is_authenticated %}
-                                            <a href="javascript:;" class="btn-reply" data-targetid="2"
-                                               data-targetname="燕十四">回复</a>
+                                            <a href="javascript:;" class="btn-reply"
+                                               data-targetid="{{ re.author_from.id }}"
+                                               data-targetname="{{ re.author_from.username }}">回复</a>
                                         {% else %}
                                             <a class="btn-reply" href="{% url 'user:login' %}?next=
 {% url 'user:message' %}">回复</a>
                                         {% endif %}
                                     </p>
                                 </div>
-{#                            {% endfor %}#}
+                            {% endfor %}
                         {% endif %}
                         <div class="replycontainer layui-hide">
                             <form class="layui-form" action="" method="post">
                                 {% csrf_token %}
-                                <input type="hidden" name="remarkId" value="1">
-                                <input type="hidden" name="targetUserId" value="0">
+                                <input type="hidden" name="comment_id" value="{{ message.id }}">
+                                <input type="hidden" name="author_to_id" value="{{ message.author.id }}">
                                 <div class="layui-form-item">
                                 <textarea name="re_content" lay-verify="replyContent" placeholder="请输入回复内容"
                                           class="layui-textarea" style="min-height:80px;"></textarea>
@@ -144,7 +152,7 @@
                             </form>
                         </div>
                     </li>
-
+                {% endfor %}
             </ul>
             {# 实现分页标签的代码 #}
             {# 这里使用 bootstrap 渲染页面 #}

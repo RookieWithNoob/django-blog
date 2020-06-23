@@ -189,7 +189,7 @@ class MessageForm(forms.ModelForm):
         model = Message
         fields = ['content']
         labels = {'content': ''}
-        widgets = {'content': forms.Textarea(attrs={'rows': 3, 'placeholder': '写下你的评论...'})}
+        widgets = {'content': forms.Textarea(attrs={'rows': 10, 'placeholder': '写下你的评论...'})}
 
 
 class ReplyForm(forms.ModelForm):
@@ -197,4 +197,4 @@ class ReplyForm(forms.ModelForm):
         model = MessagesReply
         fields = ['re_content']
         labels = {'re_content': ''}
-        widgets = {'re_content': forms.Textarea(attrs={'rows': 3, 'placeholder': '写下你的评论...'})}
+        widgets = {'re_content': forms.Textarea(attrs={'rows': 10, 'placeholder': '写下你的评论...'})}

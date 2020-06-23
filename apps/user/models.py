@@ -78,7 +78,7 @@ class MessagesReply(BaseModel):
     author_to = models.ForeignKey('User',verbose_name='被回复的人', on_delete=models.CASCADE, blank=True, null=True)
 
     class Meta:
-        ordering = ['-create_time']
+        ordering = ['create_time']
         db_table = 'tb_messages_reply'
         verbose_name = '二级留言'
         verbose_name_plural = verbose_name
