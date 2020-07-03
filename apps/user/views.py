@@ -10,6 +10,10 @@ from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
 from user.models import User, Message
 
+from django.contrib.auth.models import  Group
+from rest_framework import viewsets
+from .serializers import UserSerializer, GroupSerializer
+
 
 logger = logging.getLogger('django')
 
@@ -209,3 +213,18 @@ class MessageView(View):
         else:
             return HttpResponse("表单内容有误，请重新填写。")
 
+
+class UserViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows users to be viewed or edited.
+    """
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
+
+
+class GroupViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows groups to be viewed or edited.
+    """
+    queryset = Group.objects.all()
+    serializer_class = GroupSerializer

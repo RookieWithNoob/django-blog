@@ -23,7 +23,7 @@ urlpatterns = [
     path('archives/', ArchivesView.as_view(), name='archives'),  # 归档
     path('article/search/', ArticleSearchView.as_view(), name='article_search'),  # 搜索
     url(r'^', include(router.urls)),
-    url(r'^api/', include('rest_framework.urls', namespace='api'))
+
 ]
 
 # urlpatterns += router.urls  # 将路由器中的所有路由信息追加到django的路由列表中
